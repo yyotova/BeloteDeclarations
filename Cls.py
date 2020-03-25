@@ -1,9 +1,9 @@
 from random import randint as rand
 from copy import deepcopy
-card_deck=["7s", "8s", "9s", "10c", "Jd", "Qd","Kd","As",
-"7c", "8d", "9c", "10s", "Jh", "Qc", "Kc", "Ad",
-"7c", "8d", "9c", "10s", "Jh", "Qc", "Kc", "Ad",
-"7h", "8h", "9h", "10h", "Jc", "Qh", "Ks", "Ah"
+card_deck=["7s", "8s", "9s", "10s", "Js", "Qs","Ks","As",
+"7d", "8d", "9d", "10d", "Jd", "Qd", "Kd", "Ad",
+"7c", "8c", "9c", "10c", "Jc", "Qc", "Kc", "Ac",
+"7h", "8h", "9h", "10h", "Jh", "Qh", "Kh", "Ah"
 ]
 
 lst_calls=["Clubs", "Diamonds", "Hearts", "Spades","No trumps","All trumps"]
@@ -24,6 +24,37 @@ def create_hand():
 	return lst_hand
 #test a funcito. maybe use idk/ sort by color
 #maybe dont return list but work with lists of color
+def inner_sort(lst):
+# 7 8 9 10 J Q K A
+	l=[]
+	l2=[]
+	color=lst[0][-1:]
+	for x in lst:
+		x=x[:-1]
+		if x =="J":
+			x="11"
+		if x =="Q":
+			x="12"
+		if x =="K":
+			x="13"
+		if x =="A":
+			x="14"
+		l.append(int(x))
+	l.sort()
+	for x in l:
+		x=str(x)
+		if x =="11":
+			x="J"
+		if x =="12":
+			x="Q"
+		if x =="13":
+			x="K"
+		if x =="14":
+			x="A"
+		x+=color
+		l2.append(x)
+	return l2
+
 def sort(lst):
 	lc=[]
 	ld=[]
@@ -48,7 +79,12 @@ def sort(lst):
 				lh.append(x)
 			if x[2]=="s":
 				ls.append(x)
-	return lc+ld+lh+ls
+	lc=inner_sort(lc)
+	ld=inner_sort(ld)
+	lh=inner_sort(lh)
+	ls=inner_sort(ls)
+	return ls+lh+ld+lc
+
 class Player:
 	def __init__(self,name):
 		self.name=name
