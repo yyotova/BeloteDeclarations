@@ -10,19 +10,45 @@ lst_calls=["Clubs", "Diamonds", "Hearts", "Spades","No trumps","All trumps"]
 
 
 def player_call():
-	n=rand(0,len(lst_calls))
+	n=rand(0,len(lst_calls)-1)
 	return lst_calls[n]
 
 card_deck_cp=deepcopy(card_deck)
 
 def create_hand():
 	lst_hand=[]
-	for x in range(1,8):
+	for x in range(0,8):
 		n=rand(0,len(card_deck_cp)-1)
 		lst_hand.append(card_deck_cp[n])
 		card_deck_cp.remove(card_deck_cp[n])
 	return lst_hand
-
+#test a funcito. maybe use idk/ sort by color
+#maybe dont return list but work with lists of color
+def sort(lst):
+	lc=[]
+	ld=[]
+	lh=[]
+	ls=[]
+	for x in lst:
+		if len(x)==2:
+			if x[1]=="c":
+				lc.append(x)
+			if x[1]=="d":
+				ld.append(x)
+			if x[1]=="h":
+				lh.append(x)
+			if x[1]=="s":
+				ls.append(x)
+		if len(x)==3:
+			if x[2]=="c":
+				lc.append(x)
+			if x[2]=="d":
+				ld.append(x)
+			if x[2]=="h":
+				lh.append(x)
+			if x[2]=="s":
+				ls.append(x)
+	return lc+ld+lh+ls
 class Player:
 	def __init__(self,name):
 		self.name=name
