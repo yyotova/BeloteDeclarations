@@ -10,6 +10,25 @@ class card:
 	
 	def __repr__(self):
 		return str(num+sym)
+lst[class card,]
+class card
+class 
+game.py->
+import 
+class Deck:
+	def __inti__(self,lst)
+	n=randomint(1,6)
+
+def hand_for_player():
+count_hand=0
+lst_deck=deppcopy.copy
+l=[]
+for x in range(1,8)
+	n=randoint(0,len(lst_deck))
+	l.append(lst_decl[n])
+	lst_deck.remove(n)
+return l
+	
 func:
 test:8
 retrns lst
