@@ -1,4 +1,3 @@
-
 class Player:
 	def __init__(self,name):
 		self.name=name
@@ -17,13 +16,13 @@ class Player:
 	def get_hand(self, lst_hand):
 		self.lst_hand = lst_hand
 
-	def get_announcements(self):
+	def get_announcements(self,announcements_list):
 		#check for belot 30 ,50, 100
-		pass
+		self.announcements=announcements_list
 
-	def get_points(self):
+	def get_points(self,points):
 		#get points of player 
-		pass
+		self.points=points
 
 class Team:
 	def __init__(self,name,lst_player):
@@ -33,3 +32,5 @@ class Team:
 
 	def __str__(self):
 		return str(self.name)
+	def update_score(self,score):
+		self.score+=score
