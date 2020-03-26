@@ -83,7 +83,12 @@ def sort(lst):
 	ld=inner_sort(ld)
 	lh=inner_sort(lh)
 	ls=inner_sort(ls)
-	return ls+lh+ld+lc
+	l_end=[]
+	l_end.append(ls)
+	l_end.append(lh)
+	l_end.append(ld)
+	l_end.append(lc)
+	return l_end
 
 class Player:
 	def __init__(self,name):
@@ -115,4 +120,9 @@ class Team:
 		self.score=0
 	def __str__(self):
 		return str(self.name)
-
+'''
+game.py
+while gameover==False:
+round()
+->score
+'''
