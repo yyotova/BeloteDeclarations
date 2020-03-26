@@ -105,3 +105,51 @@ def sort(lst):
     final_list_with_sorted_cards.append(list_with_spades)
 
     return final_list_with_sorted_cards
+
+def announcements(cards, round_call):
+    if random_call == 'Clubs':
+        pass
+
+    elif random_call == 'Diamonds':
+        pass
+
+    elif random_call == 'Hearts':
+        pass
+
+    elif random_call == 'Spades':
+        pass
+
+    elif random_call == 'All trumps':
+        pass
+
+    else:
+        return []
+
+def points(announcements):
+    if announcements == []:
+        return 0
+
+    else:
+        list_with_points = []
+
+        for announce in announcements:
+            if announce == 'belote':
+                list_with_points.append(20)
+
+            elif announce == 'tierce':
+                list_with_points.append(20)
+
+            elif announce == 'quarte':
+                list_with_points.append(50)
+
+            elif announce == 'quinte':
+                list_with_points.append(100)
+
+            elif announce == 'carre of 9s':
+                list_with_points.append(150)
+
+            elif announce == 'carre of Js':
+                list_with_points.append(200)
+
+        return list_with_points
+
