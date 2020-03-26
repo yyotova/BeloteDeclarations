@@ -1,6 +1,8 @@
 from random import randint as rand
 from copy import deepcopy
-
+'''
+тествам си качването
+'''
 card_deck = ["7s", "8s", "9s", "10s", "Js", "Qs","Ks","As",
 "7d", "8d", "9d", "10d", "Jd", "Qd", "Kd", "Ad",
 "7c", "8c", "9c", "10c", "Jc", "Qc", "Kc", "Ac",
