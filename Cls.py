@@ -34,3 +34,5 @@ class Team:
 		return str(self.name)
 	def update_score(self,score):
 		self.score+=score
+	def get_players(self):
+		return self.lst_player

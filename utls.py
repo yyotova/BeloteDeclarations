@@ -14,8 +14,10 @@ def random_call():
 
 	return lst_calls[n]
 
-def random_hand():
-	card_deck_cp = deepcopy(card_deck)
+def create_deck_copy():
+	return deepcopy(card_deck)
+
+def random_hand(card_deck_cp):
 	lst_hand = []
 
 	for x in range(0,8):
