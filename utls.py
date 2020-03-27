@@ -108,18 +108,24 @@ def sort(lst):
 
 def has_belote(cards):
     if len(cards) == 0:
-        return False
+        return []
 
     else:
+        result =[]
         count =  0
         for card in cards:
             if card[:-1] == '12':
                 count += 1
+                result.append(card)
 
             elif card[:-1] == '13':
                 count += 1
+                result.append(card)
 
-        return count == 2
+        if count == 2:
+            return result
+        else: 
+            return []
 
 def has_tierce(cards):
     if len(cards) < 3:
@@ -159,7 +165,54 @@ def has_quatre(cards):
         else:
             return []
 
+def has_quinte(cards):
+    if len(cards) < 5:
+        return []
+    else:
+        count = 1
+        result = []
+        for i in range(len(cards) - 1):
+            if int(cards[i+1][:-1]) == int(cards[i][:-1]) + 1:
+                count += 1
+                result.append(cards[i])
 
+                if i + 1 == len(cards) - 1:
+                    result.append(cards[i + 1])
+
+        if count >= 5:
+            return result
+        else:
+            return []
+
+def check_for_announcements(sorted_cards):
+    announcements = {'belote': [],
+    'tierce': [],
+    'quatre': [],
+    'quinte': [],
+    'carre of 9s': [],
+    'carre of Js': [],
+    'carre': []
+    }
+    result = {}
+
+    if len(has_belote(sorted_cards)) > 0:
+        announcements['belote'].append(has_belote(sorted_cards))
+
+    if len(has_tierce(sorted_cards)) > 0:
+        announcements['tierce'].append(has_tierce(sorted_cards))
+
+    if len(has_quatre(sorted_cards)) > 0:
+        announcements['quatre'].append(has_quatre(sorted_cards))
+
+    if len(has_quinte(sorted_cards)) > 0:
+        announcements['quinte'].append(has_quinte(sorted_cards))
+
+
+    for key, value in announcements.items():
+        if len(value) != 0:
+            result[key] = value
+
+    return result
 
 #for one player at the round 
 def announcements(sorted_cards, round_call):
@@ -174,29 +227,16 @@ def announcements(sorted_cards, round_call):
     result = {}
 
     if round_call == 'Clubs':
-        if has_belote(sorted_cards[0]):
-            announcements['belote'].append(['12c', '13c'])
+        return check_for_announcements(sorted_cards[0])
 
-        if len(has_tierce(sorted_cards[0])) > 0:
-            announcements['tierce'].append(has_tierce(sorted_cards[0]))
-
-        if len(has_quatre(sorted_cards[0])) > 0:
-            announcements['quatre'].append(has_quatre(sorted_cards[0]))
-
-
-        for key, value in announcements.items():
-            if len(value) != 0:
-                result[key] = value
-
-        return result
     elif round_call == 'Diamonds':
-        pass
+        return check_for_announcements(sorted_cards[1])
 
     elif round_call == 'Hearts':
-        pass
+        return check_for_announcements(sorted_cards[2])
 
     elif round_call == 'Spades':
-        pass
+        return check_for_announcements(sorted_cards[3])
 
     elif round_call == 'All trumps':
         if has_belote(sorted_cards[0]):
@@ -234,6 +274,18 @@ def announcements(sorted_cards, round_call):
 
         if len(has_quatre(sorted_cards[3])) > 0:
             announcements['quatre'].append(has_quatre(sorted_cards[3]))
+
+        if len(has_quinte(sorted_cards[0])) > 0:
+            announcements['quinte'].append(has_quinte(sorted_cards[0]))
+
+        if len(has_quinte(sorted_cards[1])) > 0:
+            announcements['quinte'].append(has_quinte(sorted_cards[1]))
+
+        if len(has_quinte(sorted_cards[2])) > 0:
+            announcements['quinte'].append(has_quinte(sorted_cards[2]))
+
+        if len(has_quinte(sorted_cards[3])) > 0:
+            announcements['quinte'].append(has_quinte(sorted_cards[3]))
 
         for key, value in announcements.items():
             if len(value) != 0:
