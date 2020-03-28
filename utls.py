@@ -133,18 +133,21 @@ def has_tierce(cards):
     else:
         count = 1
         result = []
-        for i in range(len(cards) - 1):
-            if int(cards[i+1][:-1]) == int(cards[i][:-1]) + 1:
+        for i in range(len(cards)):
+            if i != len(cards) - 1 and int(cards[i+1][:-1]) == int(cards[i][:-1]) + 1:
                 count += 1
                 result.append(cards[i])
+            #include the last card from the seqence
+            elif count == 3 and int(cards[i][:-1]) == int(cards[i - 1][:-1]) + 1:
+                result.append(cards[i])
+                
+                return result
+            #the sequence is breaked
+            else:
+                count = 1
+                result.clear()
 
-                if count == 3:
-                    result.append(cards[i + 1])
-
-        if count == 3:
-            return result
-        else:
-            return []
+        return []
 
 def has_quatre(cards):
     if len(cards) < 4:
@@ -152,18 +155,21 @@ def has_quatre(cards):
     else:
         count = 1
         result = []
-        for i in range(len(cards) - 1):
-            if int(cards[i+1][:-1]) == int(cards[i][:-1]) + 1:
+        for i in range(len(cards)):
+            if i != len(cards) - 1 and int(cards[i+1][:-1]) == int(cards[i][:-1]) + 1:
                 count += 1
                 result.append(cards[i])
+            #include the last card from the seqence
+            elif count == 4 and int(cards[i][:-1]) == int(cards[i - 1][:-1]) + 1:
+                result.append(cards[i])
+                
+                return result
+            #the sequence is breaked
+            else:
+                count = 1
+                result.clear()
 
-                if count == 4:
-                    result.append(cards[i + 1])
-
-        if count == 4:
-            return result
-        else:
-            return []
+        return []
 
 def has_quinte(cards):
     if len(cards) < 5:
@@ -171,18 +177,22 @@ def has_quinte(cards):
     else:
         count = 1
         result = []
-        for i in range(len(cards) - 1):
-            if int(cards[i+1][:-1]) == int(cards[i][:-1]) + 1:
+        for i in range(len(cards)):
+            if i != len(cards) - 1 and int(cards[i+1][:-1]) == int(cards[i][:-1]) + 1:
                 count += 1
                 result.append(cards[i])
 
-                if i + 1 == len(cards) - 1:
-                    result.append(cards[i + 1])
+            #include the last card from the seqence
+            elif count >= 5 and int(cards[i][:-1]) == int(cards[i - 1][:-1]) + 1:
+                result.append(cards[i])
+                
+                return result
+            #the sequence is breaked
+            else:
+                count = 1
+                result.clear()
 
-        if count >= 5:
-            return result
-        else:
-            return []
+        return []
 
 def check_for_announcements(sorted_cards):
     announcements = {'belote': [],
@@ -193,20 +203,22 @@ def check_for_announcements(sorted_cards):
     'carre of Js': [],
     'carre': []
     }
+    announcement = {}
+
     result = {}
 
+
     if len(has_belote(sorted_cards)) > 0:
-        announcements['belote'].append(has_belote(sorted_cards))
+        announcements['belote'] =  has_belote(sorted_cards)
 
     if len(has_tierce(sorted_cards)) > 0:
-        announcements['tierce'].append(has_tierce(sorted_cards))
+        announcements['tierce'] = has_tierce(sorted_cards)
 
     if len(has_quatre(sorted_cards)) > 0:
-        announcements['quatre'].append(has_quatre(sorted_cards))
+        announcements['quatre'] = has_quatre(sorted_cards)
 
     if len(has_quinte(sorted_cards)) > 0:
-        announcements['quinte'].append(has_quinte(sorted_cards))
-
+        announcements['quinte'] = has_quinte(sorted_cards)
 
     for key, value in announcements.items():
         if len(value) != 0:
@@ -239,60 +251,32 @@ def announcements(sorted_cards, round_call):
         return check_for_announcements(sorted_cards[3])
 
     elif round_call == 'All trumps':
-        if has_belote(sorted_cards[0]):
-            announcements['belote'].append(['12c', '13c'])
+        dic1 = check_for_announcements(sorted_cards[0])
+        dic2 = check_for_announcements(sorted_cards[1])
+        dic3 = check_for_announcements(sorted_cards[2])
+        dic4 = check_for_announcements(sorted_cards[3])
 
-        elif has_belote(sorted_cards[1]):
-            announcements['belote'].append(['12d', '13d'])
+        for key, value in dic1.items():
+            announcements[key].append(value)
 
-        elif has_belote(sorted_cards[2]):
-            announcements['belote'].append(['12h', '13h'])
+        for key, value in dic2.items():
+            announcements[key].append(value)
 
-        elif has_belote(sorted_cards[3]):
-            announcements['belote'].append(['12s', '13s'])
+        for key, value in dic3.items():
+            announcements[key].append(value)
 
-        if len(has_tierce(sorted_cards[0])) > 0:
-            announcements['tierce'].append(has_tierce(sorted_cards[0]))
+        for key, value in dic4.items():
+            announcements[key].append(value)
 
-        if len(has_tierce(sorted_cards[1])) > 0:
-            announcements['tierce'].append(has_tierce(sorted_cards[1]))
-
-        if len(has_tierce(sorted_cards[2])) > 0:
-            announcements['tierce'].append(has_tierce(sorted_cards[2]))
-
-        if len(has_tierce(sorted_cards[3])) > 0:
-            announcements['tierce'].append(has_tierce(sorted_cards[3]))
-
-        if len(has_quatre(sorted_cards[0])) > 0:
-            announcements['quatre'].append(has_quatre(sorted_cards[0]))
-
-        if len(has_quatre(sorted_cards[1])) > 0:
-            announcements['quatre'].append(has_quatre(sorted_cards[1]))
-
-        if len(has_quatre(sorted_cards[2])) > 0:
-            announcements['quatre'].append(has_quatre(sorted_cards[2]))
-
-        if len(has_quatre(sorted_cards[3])) > 0:
-            announcements['quatre'].append(has_quatre(sorted_cards[3]))
-
-        if len(has_quinte(sorted_cards[0])) > 0:
-            announcements['quinte'].append(has_quinte(sorted_cards[0]))
-
-        if len(has_quinte(sorted_cards[1])) > 0:
-            announcements['quinte'].append(has_quinte(sorted_cards[1]))
-
-        if len(has_quinte(sorted_cards[2])) > 0:
-            announcements['quinte'].append(has_quinte(sorted_cards[2]))
-
-        if len(has_quinte(sorted_cards[3])) > 0:
-            announcements['quinte'].append(has_quinte(sorted_cards[3]))
+        #cannot have more than one belote in one round
+        if len(announcements['belote']) > 1:
+            announcements['belote'] = announcements['belote'][0]
 
         for key, value in announcements.items():
             if len(value) != 0:
                 result[key] = value
-        
-        return result
 
+        return result
     else:
         return {}
 

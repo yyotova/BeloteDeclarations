@@ -39,14 +39,14 @@ class TestAnnouncements(unittest.TestCase):
 
         res = announcements(sorted_cards, 'Clubs')
 
-        self.assertEqual(res, {'belote': [['12c', '13c']]})
+        self.assertEqual(res, {'belote': ['12c', '13c']})
 
     def test_with_more_belotes_when_the_rank_is_all_trumps_returns_only_one(self):
         sorted_cards = [ ['7c', '12c', '13c'], ['12d', '13d'], ['10h'], ['12s', '13s'] ]
 
         res = announcements(sorted_cards, 'All trumps')
 
-        self.assertEqual(res, {'belote': [['12c', '13c']]})
+        self.assertEqual(res, {'belote': ['12c', '13c']})
 
     def test_with_only_with_one_tierce_in_different_ranks(self):
         sorted_cards1 = [ ['7c', '10c', '11c', '12c'], ['11d', '13d'], ['7h', '10h'], [] ]
@@ -55,8 +55,29 @@ class TestAnnouncements(unittest.TestCase):
         res1 = announcements(sorted_cards1, 'Clubs')
         res2 = announcements(sorted_cards2, 'Diamonds')
 
-        self.assertEqual(res1, {'tierce': [['10c', '11c', '12c']]})
-        self.assertEqual(res2, {'tierce': [['10d', '11d', '12d']]})
+        self.assertEqual(res2, {'tierce': ['10d', '11d', '12d']})
+        self.assertEqual(res1, {'tierce': ['10c', '11c', '12c']})
+
+    def test_with_no_announcements_when_the_rank_is_all_trumps(self):
+        sorted_cards = [['14c'], ['9d'], ['8h', '10h'], ['8s', '9s', '11s', '12s']]
+    
+        res = announcements(sorted_cards, 'All trumps')
+        
+        self.assertEqual(res, {})
+
+    def test_with_one_tierce_at_the_begining_when_the_rank_is_all_trumps(self):
+        sorted_cards = [['14c'], ['9d'], ['8h'], ['7s','8s', '9s', '11s', '12s']]
+
+        res = announcements(sorted_cards, 'All trumps')
+
+        self.assertEqual(res, {'tierce': [['7s','8s', '9s']]})
+
+    def test_with_one_tierce_at_the_end_when_the_rank_is_all_trumps(self):
+        sorted_cards = [['14c'], ['9d'], ['8h'], ['7s','8s', '10s', '11s', '12s']]
+
+        res = announcements(sorted_cards, 'All trumps')
+
+        self.assertEqual(res, {'tierce': [['10s','11s', '12s']]})
 
     def test_with_more_tierces_and_one_belote_when_the_rank_is_all_trumps(self):
         sorted_cards = [ ['7c', '8c', '9c'], ['10d', '11d'], [], ['12s', '13s','14s'] ]
@@ -65,12 +86,19 @@ class TestAnnouncements(unittest.TestCase):
 
         self.assertEqual(res, {'belote': [['12s', '13s']], 'tierce': [['7c', '8c', '9c'],['12s', '13s','14s']]})
 
+    def test_with_one_quinte_when_the_rank_is_all_trumps(self):
+        sorted_cards = [ [], ['10d'], [], ['7s', '8s','9s','10s', '11s','13s', '14s'] ]
+
+        res = announcements(sorted_cards, 'All trumps')
+
+        self.assertEqual(res, {'quinte': [['7s', '8s','9s','10s', '11s']]})
+
     def test_with_one_quatre_when_the_rank_is_clubs_returns_only_the_quatre_not_the_tierce(self):
         sorted_cards = [ ['7c', '8c', '9c', '10c','14c'], ['7d', '8d'], ['7h'], [] ]
 
         res = announcements(sorted_cards, 'Clubs')
 
-        self.assertEqual(res, {'quatre': [['7c', '8c', '9c', '10c']]})
+        self.assertEqual(res, {'quatre': ['7c', '8c', '9c', '10c']})
 
     def test_with_more_quatres_when_the_rank_is_all_trumps_returns_only_the_quatres_not_with_tierces(self):
         sorted_cards = [ ['7c', '8c', '9c', '10c'], ['8d', '9d', '10d', '11d'], [], [] ]
@@ -84,6 +112,13 @@ class TestAnnouncements(unittest.TestCase):
 
         res = announcements(sorted_cards, 'Clubs')
 
-        self.assertEqual(res, {'belote': [['12c', '13c']], 'quinte': [['9c','10c', '11c', '12c', '13c']]})
+        self.assertEqual(res, {'belote': ['12c', '13c'], 'quinte': ['9c','10c', '11c', '12c', '13c']})
+
+    def test_with_rank_no_trumps_returns_empty_dictionary(self):
+        sorted_cards = [ ['9c', '10c', '11c', '12c', '13c'], ['11d', '13d'], ['7h'], [] ]
+
+        res = announcements(sorted_cards, 'No trumps')
+
+        self.assertEqual(res, {})
 if __name__ == '__main__':
     unittest.main()
