@@ -120,5 +120,55 @@ class TestAnnouncements(unittest.TestCase):
         res = announcements(sorted_cards, 'No trumps')
 
         self.assertEqual(res, {})
+
+    def test_with_carre_in_differnt_ranks(self):
+        sorted_cards = [ ['9c', '10c', '13c'], ['9d', '13d'], ['9h'], ['7s', '9s'] ]
+
+        res1 = announcements(sorted_cards, 'Clubs')
+        res2 = announcements(sorted_cards, 'Diamonds')
+        res3 = announcements(sorted_cards, 'Hearts')
+        res4 = announcements(sorted_cards, 'Spades')
+
+        self.assertEqual(res1, {'carre of 9s': ['9c', '9d', '9h', '9s']})
+        self.assertEqual(res2, {'carre of 9s': ['9c', '9d', '9h', '9s']})
+        self.assertEqual(res3, {'carre of 9s': ['9c', '9d', '9h', '9s']})
+        self.assertEqual(res4, {'carre of 9s': ['9c', '9d', '9h', '9s']})
+
+    def test_with_more_carres_when_the_rank_is_all_trumps(self):
+        sorted_cards = [ ['9c', '10c'], ['9d', '10d'], ['9h', '10h'], ['9s', '10s'] ]
+
+        res = announcements(sorted_cards, 'All trumps')
+
+        self.assertEqual(res, {'carre of 9s': [['9c', '9d', '9h', '9s']], 'carre of 10s': [['10c', '10d', '10h', '10s']]})
+
+    def test_with_carre_and_tierce_returns_only_carre(self):
+        sorted_cards = [ ['9c', '10c'], ['7d', '8d', '9d'], ['9h', '10h'], ['9s']]
+
+        res = announcements(sorted_cards, 'All trumps')
+
+        self.assertEqual(res, {'carre of 9s': [['9c', '9d', '9h', '9s']]})
+
+    def test_with_carre_and_quatre_returns_only_carre(self):
+        sorted_cards = [ ['9c'], ['7d', '8d', '9d', '10d'], ['9h', '10h'], ['9s']]
+
+        res = announcements(sorted_cards, 'All trumps')
+
+        self.assertEqual(res, {'carre of 9s': [['9c', '9d', '9h', '9s']]})
+
+    def test_with_carre_and_quinte_returns_only_carre(self):
+        sorted_cards = [ ['9c'], ['7d', '8d', '9d', '10d', '11d'], ['9h'], ['9s']]
+
+        res = announcements(sorted_cards, 'All trumps')
+
+        self.assertEqual(res, {'carre of 9s': [['9c', '9d', '9h', '9s']]})
+
+    def test_with_carre_and_belote_returns_both(self):
+        sorted_cards = [ ['12c'], ['7d', '12d', '13d'], ['9h', '12h'], ['12s', '13s']]
+
+        res = announcements(sorted_cards, 'All trumps')
+
+        self.assertEqual(res, {'belote': ['12d', '13d'], 'carre of Qs': [['12c', '12d', '12h', '12s']]})
+
+
 if __name__ == '__main__':
     unittest.main()

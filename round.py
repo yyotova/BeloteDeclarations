@@ -1,46 +1,59 @@
 from Cls import Player,Team
-from utls import random_hand, sort, create_deck_copy, random_call
+from utls import random_hand, sort, create_deck_copy, random_call, announcements
 '''
 from belote import get_players
 '''
 def round():
-	call = random_call()
-	card_deck=create_deck_copy()
-	#players_lst=get_players()
-	'''
-	make static for now get from main func later
-	for testing
-	'''
-	'''
-	   Редът на играчите е друг!  
-	'''
-	announcements_of_the_first_team =[]
-	announcements_of_the_second_team =[]
+    call = random_call()
+    card_deck=create_deck_copy()
+    announcements_of_the_first_team =[]
+    announcements_of_the_second_team =[]
 
-	first_team=Team("Nie",[Player("Gosho"),Player("Pesho")])
-	second_team=Team("Vie",[Player("Kiro"),Player("Miro")])
+    first_team=Team("Nie",[Player("Gosho"),Player("Pesho")])
+    second_team=Team("Vie",[Player("Kiro"),Player("Miro")])
+    
+    print('rank: ', call)
+    #Player1(first team)
+    first_team.lst_players[0].cards =random_hand(card_deck) 
+    print('Cards Player1: ', first_team.lst_players[0].cards)
 
-	for  player  in first_team.lst_players:
-		player.set_hand(random_hand(card_deck))
+    print('announcements:', announcements(sort(first_team.lst_players[0].cards), call))
+    announcements_first_player = announcements(sort(first_team.lst_players[0].cards), call)
+    announcements_of_the_first_team.append(announcements_first_player)
+    first_team.lst_players[0].announcements = list(announcements_first_player.keys())
+    print(first_team.lst_players[0].announcements)
 
-	for  player  in second_team.lst_players:
-		player.set_hand(random_hand(card_deck))
+    #Player2(second team)
+    second_team.lst_players[0].cards =random_hand(card_deck)
+    print('Cards Player2: ', second_team.lst_players[0].cards)
 
-	for player in first_team.lst_players:
-		print(player)
+    print('announcements:', announcements(sort(second_team.lst_players[0].cards), call))
+    announcements_second_player = announcements(sort(second_team.lst_players[0].cards), call)
+    announcements_of_the_second_team.append(announcements_second_player)
+    second_team.lst_players[0].announcements = list(announcements_second_player.keys())
+    print(second_team.lst_players[0].announcements)
 
-	for player in second_team.lst_players:
-		print(player)
+    #Player3(first team)
+    first_team.lst_players[1].cards =random_hand(card_deck) 
+    print('Cards Player1: ', first_team.lst_players[1].cards)
 
-	for player in first_team.lst_players:
-		print((sort(player.lst_hand)))
+    print('announcements:', announcements(sort(first_team.lst_players[1].cards), call))
+    announcements_third_player = announcements(sort(first_team.lst_players[1].cards), call)
+    announcements_of_the_first_team.append(announcements_third_player)
+    first_team.lst_players[1].announcements = list(announcements_third_player.keys())
+    print(first_team.lst_players[1].announcements)
 
-	for player in second_team.lst_players:
-		print((sort(player.lst_hand)))
+    #Player4(second team)
+    second_team.lst_players[1].cards =random_hand(card_deck)
+    print('Cards Player2: ', second_team.lst_players[1].cards)
+
+    print('announcements:', announcements(sort(second_team.lst_players[1].cards), call))
+    announcements_fourth_player = announcements(sort(second_team.lst_players[1].cards), call)
+    second_team.lst_players[1].announcements = list(announcements_fourth_player.keys())
+    print(second_team.lst_players[1].announcements)
 
 def main():
-	round()
-	round()
+    round()
 
 if __name__ == '__main__':
-	main()
+    main()
