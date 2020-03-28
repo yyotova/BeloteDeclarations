@@ -3,11 +3,54 @@ from utls import random_hand, sort, create_deck_copy, random_call, announcements
 '''
 from belote import get_players
 '''
+
+def team_announcements(first_player, second_player):
+    for key, value in second_player.items():
+        if key in first_player:
+            for cards in value:
+                first_player[key].append(cards)
+        else:
+            first_player[key] = value
+    return first_player
+
+def check_team_announcements(first_team, second_team):
+    if len(first_team) == 0 and len(second_team) == 0:
+        return [{},{}]
+
+    elif len(first_team) == 0:
+        return [{}, second_team]
+    elif len(second_team) == 0:
+        return[first_team, {}]
+    else:
+
+        if 'tierce' in first_team and ('quinte' in second_team or 'quatre' in second_team):
+            first_team['tierce'] = []
+        if 'tierce' in second_team and ('quinte' in first_team or 'quatre' in first_team):
+            second_team['tierce'] = []
+        if 'quatre' in first_team and 'quinte' in second_team:
+            first_team['quatre'] = []
+        if 'quatre' in second_team and 'quinte' in first_team:
+            second_team['quatre'] = []
+        # if 'tierce' in first_team and 'tierce' in second_team:
+        #     print(first_team)
+        #     print(second_team)
+        #     for tierce in first_team['tierce']:
+        #         print(suite)
+        #         suite = tierce[2][:-1]
+        #         for tierce2  in second_team['tierce']:
+        #             tierce2[2][:-1] > suite
+        #             tierce = []
+        #             break
+
+
+        return[first_team, second_team]
+
 def round():
-    call = random_call()
+    # call = random_call()
+    call = 'All trumps'
     card_deck=create_deck_copy()
-    announcements_of_the_first_team =[]
-    announcements_of_the_second_team =[]
+    announcements_of_the_first_team ={}
+    announcements_of_the_second_team ={}
 
     first_team=Team("Nie",[Player("Gosho"),Player("Pesho")])
     second_team=Team("Vie",[Player("Kiro"),Player("Miro")])
@@ -19,7 +62,7 @@ def round():
 
     print('announcements:', announcements(sort(first_team.lst_players[0].cards), call))
     announcements_first_player = announcements(sort(first_team.lst_players[0].cards), call)
-    announcements_of_the_first_team.append(announcements_first_player)
+   
     first_team.lst_players[0].announcements = list(announcements_first_player.keys())
     print(first_team.lst_players[0].announcements)
 
@@ -29,7 +72,7 @@ def round():
 
     print('announcements:', announcements(sort(second_team.lst_players[0].cards), call))
     announcements_second_player = announcements(sort(second_team.lst_players[0].cards), call)
-    announcements_of_the_second_team.append(announcements_second_player)
+   
     second_team.lst_players[0].announcements = list(announcements_second_player.keys())
     print(second_team.lst_players[0].announcements)
 
@@ -39,7 +82,7 @@ def round():
 
     print('announcements:', announcements(sort(first_team.lst_players[1].cards), call))
     announcements_third_player = announcements(sort(first_team.lst_players[1].cards), call)
-    announcements_of_the_first_team.append(announcements_third_player)
+    
     first_team.lst_players[1].announcements = list(announcements_third_player.keys())
     print(first_team.lst_players[1].announcements)
 
@@ -49,8 +92,17 @@ def round():
 
     print('announcements:', announcements(sort(second_team.lst_players[1].cards), call))
     announcements_fourth_player = announcements(sort(second_team.lst_players[1].cards), call)
+
     second_team.lst_players[1].announcements = list(announcements_fourth_player.keys())
     print(second_team.lst_players[1].announcements)
+
+    announcements_of_the_first_team = team_announcements(announcements_first_player, announcements_third_player)
+    announcements_of_the_second_team = team_announcements(announcements_second_player, announcements_fourth_player)
+
+    print('announcements of the first team: ', announcements_of_the_first_team)
+    print('announcements of the second team: ', announcements_of_the_second_team)
+
+
 
 def main():
     round()
