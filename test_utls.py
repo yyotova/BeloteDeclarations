@@ -1,5 +1,5 @@
 import unittest
-from utls import random_call, random_hand, inner_sort, sort, announcements
+from utls import random_call, random_hand, inner_sort, sort, announcements, points
 
 class TestInnerSort(unittest.TestCase):
     def test_inner_sort_with_empty_list_returns_empty_list(self):
@@ -169,6 +169,19 @@ class TestAnnouncements(unittest.TestCase):
 
         self.assertEqual(res, {'belote': ['12d', '13d'], 'carre of Qs': [['12c', '12d', '12h', '12s']]})
 
+class TestPoints(unittest.TestCase):
+
+    def test_with_no_announcements(self):
+            res=points([])
+            self.assertEqual(res,0)    
+
+    def test_with_one_announcement(self):
+            res=points(['belote'])
+            self.assertEqual(res, [20])
+
+    def test_with_more_than_one_announcement(self):
+            res=points(['belote','carre of Qs',])
+            self.assertEqual(res, [20,100])
 
 if __name__ == '__main__':
     unittest.main()
