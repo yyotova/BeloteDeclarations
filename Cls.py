@@ -83,16 +83,6 @@ class Round:
                         player.points=points(player.announcements)
 
     def add_team_score(self):
-        # score=0
-        # # for x in self.teams_lst[1].lst_players[1].points:
-        #     # score+=int(x)
-        # print(self.teams_lst[0].lst_players[0].points)
-        # print(self.teams_lst[0].lst_players[1].points)
-        # print(self.teams_lst[1].lst_players[0].points)
-        # print(self.teams_lst[1].lst_players[1].points)
-        
-        # # print("score is {0}".format(score))
-        # # self.teams_lst[0].score+=score
         self.teams_lst[0].score+=int(self.teams_lst[0].lst_players[0].points+self.teams_lst[0].lst_players[1].points)
         self.teams_lst[1].score+=int(self.teams_lst[1].lst_players[0].points+self.teams_lst[1].lst_players[1].points)
 
@@ -121,7 +111,10 @@ class Game:
 
     def get_dict_game(self):
         game_number_str="game {0}".format(self.game_number)
-        pass
+        list_of_dict_round=[]
+        for rounds in self.round_lst:
+            list_of_dict_round.append(rounds.get_dict_round())
+        return {game_number_str:list_of_dict_round}
 
     def save_score(file):
         pass
