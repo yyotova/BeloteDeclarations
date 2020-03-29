@@ -6,23 +6,29 @@ def create_file_result(team_list):
 	file.close()
 	return file
 def write_to_file(team_list_score,file):
-	file=open(file.name,"a")
+	file=open(file,"a")
 	score_line="\n{0}\t|{1}\t".format(team_list_score[0],team_list_score[1])
 	file.write(score_line)
 	file.close()
 
 def write_end_of_file(team_list_game_score,file):
-	file=open(file.name,"a")
+	file=open(file,"a")
 	score_line="\n\t{0}\t|\t{1}\t".format(team_list_game_score[0],team_list_game_score[1])
 	file.write(score_line)
 	file.write("\n==================")
 	file.close()
 
-def main():
-	file=create_file_result(["Nie","Vie"])
-	print(file.name)
-	write_to_file([20,50],file)
-	write_end_of_file([1,0],file)
+def create_json_file():
+	file=open("data.json","a")
+	file.close()
+	return file
+# def main():
+# 	file=create_file_result(["Nie","Vie"])
+# 	print(file.name)
+# 	write_to_file([20,50],file)
+# 	write_end_of_file([1,0],file)
+
+
 
 if __name__ == '__main__':
 	main()
