@@ -97,13 +97,14 @@ class Game:
 
     def play_game(self,file_result):
         round_counter=0
-        while self.teams_lst[0].score<=150 and self.teams_lst[1].score<=150:
+        while self.teams_lst[0].score<150 and self.teams_lst[1].score<150:
             game_round=Round(self.teams_lst,round_counter)
             game_round.add_hands_to_players()
             call=random_call()
             game_round.add_announcements_to_players(call)
             game_round.add_points_to_player()
-            write_to_file([self.teams_lst[0].score,self.teams_lst[1].score],file_result)
+            if (int(self.teams_lst[0].lst_players[0].points+self.teams_lst[0].lst_players[1].points)+int(self.teams_lst[1].lst_players[0].points+self.teams_lst[1].lst_players[1].points))!=0:
+                write_to_file(["{0}+{1}".format(str(self.teams_lst[0].score),str(self.teams_lst[0].lst_players[0].points+self.teams_lst[0].lst_players[1].points)),"{0}+{1}".format(str(self.teams_lst[1].score),str(self.teams_lst[1].lst_players[0].points+self.teams_lst[1].lst_players[1].points))],file_result)
             game_round.add_team_score()
             self.round_lst.append(game_round)
             round_counter+=1
@@ -113,6 +114,7 @@ class Game:
         list_of_dict_round=[]
         for rounds in self.round_lst:
             list_of_dict_round.append(rounds.get_dict_round())
+        print(list_of_dict_round)
         return {game_number_str:list_of_dict_round}
 
     def update_score(self):
