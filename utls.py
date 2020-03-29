@@ -437,6 +437,9 @@ def points(announcements):
 
             elif announce == 'carre of Js':
                 list_with_points.append(200)
-
+              
+            else:
+                list_with_points.append(100)                
+        
         return list_with_points
 
