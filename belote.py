@@ -35,6 +35,7 @@ def main():
 		score=game.update_score()
 		write_end_of_file(score,file.name)
 		count_games+=1
+	
 	json_file.close()
 	file.close()
 
