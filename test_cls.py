@@ -95,13 +95,14 @@ class test_round_class(unittest.TestCase):
 
 class test_game_class(unittest.TestCase):
 	def test_game_class(self):
-		first_team=Team("Severozapada",[Player("Petar"),Player("Yoanna")])
-		second_team=Team("Ne_moga_da_izmislq_dr_ime",[Player("Metar"),Player("Ivana")])
-		test_game=Game(1,[first_team,second_team])
-		test_game.play_game("ts")
-		# print(test_game.round_lst)
-		for round in test_game.round_lst:
-			print(round.get_dict_round())
+		# first_team=Team("Severozapada",[Player("Petar"),Player("Yoanna")])
+		# second_team=Team("Ne_moga_da_izmislq_dr_ime",[Player("Metar"),Player("Ivana")])
+		# test_game=Game(1,[first_team,second_team])
+		# test_game.play_game("ts")
+		# # print(test_game.round_lst)
+		# for round in test_game.round_lst:
+		# 	print(round.get_dict_round())
+		pass
 		# print(test_game.round_lst)
 		# print(json.dumps(test_game.get_dict_game(),indent=4))
 	def test_game_class_score(self):
@@ -109,6 +110,7 @@ class test_game_class(unittest.TestCase):
 		second_team=Team("Ne_moga_da_izmislq_dr_ime",[Player("Metar"),Player("Ivana")])
 		test_game=Game(1,[first_team,second_team])
 		test_game.play_game("test")
+		print(test_game.get_dict_game())
 		# print(test_game.update_score())		
 
 
