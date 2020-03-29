@@ -24,13 +24,11 @@ def main():
 
 	score=[0,0]
 	count_games=1
-	json_file=open("data.json","w")
-	json_file.close()
 	json_file=open("data.json","a")
 	file=create_file_result([first_team,second_team])
-	while score[0]<=2 and score[1]<=2:
+	while score[0]<2 and score[1]<2:
 		game=Game(count_games,[first_team,second_team],score)
-		game.play_game()
+		game.play_game(file.name)
 		json.dump(game.get_dict_game(),json_file,indent=4)
 		score=game.update_score()
 		write_end_of_file(score,file.name)

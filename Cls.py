@@ -2,6 +2,7 @@ from utls import announcements
 from utls import create_deck_copy,random_hand
 from utls import sort, random_call, announcements,points
 from round import compare_team_announcements, team_announcements,final_announcements
+from file import write_to_file
 
 class Player:
     def __init__(self,name):
@@ -92,12 +93,9 @@ class Game:
         self.game_number=game_number
         self.teams_lst=teams_lst
         self.round_lst=[]
-        if game_score==None:
-            self.game_score=[0,0]
-        else:
-            self.game_score=game_score
+        self.game_score=game_score
 
-    def play_game(self):
+    def play_game(self,file_result):
         round_counter=0
         while self.teams_lst[0].score<=150 and self.teams_lst[1].score<=150:
             game_round=Round(self.teams_lst,round_counter)
@@ -105,6 +103,7 @@ class Game:
             call=random_call()
             game_round.add_announcements_to_players(call)
             game_round.add_points_to_player()
+            write_to_file([self.teams_lst[0].score,self.teams_lst[1].score],file_result)
             game_round.add_team_score()
             self.round_lst.append(game_round)
             round_counter+=1
