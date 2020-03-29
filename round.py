@@ -13,7 +13,7 @@ def team_announcements(first_player, second_player):
             first_player[key] = value
     return first_player
 
-def check_team_announcements(first_team, second_team):
+def compare_team_announcements(first_team, second_team):
     if len(first_team) == 0 and len(second_team) == 0:
         return [{},{}]
 
@@ -31,16 +31,75 @@ def check_team_announcements(first_team, second_team):
             first_team['quatre'] = []
         if 'quatre' in second_team and 'quinte' in first_team:
             second_team['quatre'] = []
-        # if 'tierce' in first_team and 'tierce' in second_team:
-        #     print(first_team)
-        #     print(second_team)
-        #     for tierce in first_team['tierce']:
-        #         print(suite)
-        #         suite = tierce[2][:-1]
-        #         for tierce2  in second_team['tierce']:
-        #             tierce2[2][:-1] > suite
-        #             tierce = []
-        #             break
+
+        if 'tierce' in first_team and 'tierce' in second_team:
+            for tierce in first_team['tierce']:
+                suite = int(tierce[2][:-1])
+                for tierce2  in second_team['tierce']:
+                    suite2 = int(tierce2[2][:-1])
+                    if suite2 > suite:
+                        first_team['tierce'].remove(tierce)
+                        break
+            for tierce in second_team['tierce']:
+                suite = int(tierce[2][:-1])
+                for tierce2  in first_team['tierce']:
+                    suite2 = int(tierce2[2][:-1])
+                    if suite2 > suite:
+                        second_team['tierce'].remove(tierce)
+                        break
+            for tierce in first_team['tierce']:
+                suite = int(tierce[2][:-1])
+                for tierce2  in second_team['tierce']:
+                    suite2 = int(tierce2[2][:-1])
+                    if suite2 == suite:
+                        first_team['tierce'].remove(tierce)
+                        second_team['tierce'].remove(tierce2)
+
+        if 'quatre' in first_team and 'quatre' in second_team:
+            for quatre in first_team['quatre']:
+                suite = int(quatre[2][:-1])
+                for quatre2  in second_team['quatre']:
+                    suite2 = int(quatre2[2][:-1])
+                    if suite2 > suite:
+                        first_team['quatre'].remove(quatre)
+                        break
+            for quatre in second_team['quatre']:
+                suite = int(quatre[2][:-1])
+                for quatre2  in first_team['quatre']:
+                    suite2 = int(quatre2[2][:-1])
+                    if suite2 > suite:
+                        second_team['quatre'].remove(quatre)
+                        break
+            for quatre in first_team['quatre']:
+                suite = int(quatre[2][:-1])
+                for quatre2  in second_team['quatre']:
+                    suite2 = int(quatre2[2][:-1])
+                    if suite2 == suite:
+                        first_team['quatre'].remove(quatre)
+                        second_team['quatre'].remove(quatre2)
+
+        if 'quinte' in first_team and 'quinte' in second_team:
+            for quinte in first_team['quinte']:
+                suite = int(quinte[-1][:-1])
+                for quinte2  in second_team['quinte']:
+                    suite2 = int(quinte2[-1][:-1])
+                    if suite2 > suite:
+                        first_team['quinte'].remove(quinte)
+                        break
+            for quinte in second_team['quinte']:
+                suite = int(quinte[-1][:-1])
+                for quinte2  in first_team['quinte']:
+                    suite2 = int(quinte2[-1][:-1])
+                    if suite2 > suite:
+                        second_team['quinte'].remove(quinte)
+                        break
+            for quinte in first_team['quinte']:
+                suite = int(quinte[2][:-1])
+                for quinte2  in second_team['quinte']:
+                    suite2 = int(quinte2[2][:-1])
+                    if suite2 == suite:
+                        first_team['quinte'].remove(quinte)
+                        second_team['quinte'].remove(quinte2)
 
 
         return[first_team, second_team]
@@ -78,7 +137,7 @@ def round():
 
     #Player3(first team)
     first_team.lst_players[1].cards =random_hand(card_deck) 
-    print('Cards Player1: ', first_team.lst_players[1].cards)
+    print('Cards Player3: ', first_team.lst_players[1].cards)
 
     print('announcements:', announcements(sort(first_team.lst_players[1].cards), call))
     announcements_third_player = announcements(sort(first_team.lst_players[1].cards), call)
@@ -88,7 +147,7 @@ def round():
 
     #Player4(second team)
     second_team.lst_players[1].cards =random_hand(card_deck)
-    print('Cards Player2: ', second_team.lst_players[1].cards)
+    print('Cards Player4: ', second_team.lst_players[1].cards)
 
     print('announcements:', announcements(sort(second_team.lst_players[1].cards), call))
     announcements_fourth_player = announcements(sort(second_team.lst_players[1].cards), call)
@@ -102,6 +161,7 @@ def round():
     print('announcements of the first team: ', announcements_of_the_first_team)
     print('announcements of the second team: ', announcements_of_the_second_team)
 
+    print(compare_team_announcements(announcements_of_the_first_team, announcements_of_the_second_team))
 
 
 def main():
