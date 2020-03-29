@@ -1,6 +1,7 @@
 from utls import announcements
 from utls import create_deck_copy,random_hand
 from utls import sort, random_call, announcements,points
+from round import compare_team_announcements, team_announcements,final_announcements
 
 class Player:
     def __init__(self,name):
@@ -57,18 +58,43 @@ class Round:
                         player.cards=random_hand(card_deck)    
 
     def add_announcements_to_players(self,call="All trumps"):
-        for teams in self.teams_lst:
-                for player in teams.lst_players:
-                        player.announcements=announcements(sort(player.cards),call)
+        announcements_first_player=announcements(sort(self.teams_lst[0].lst_players[0].cards),call)
+        announcements_third_player=announcements(sort(self.teams_lst[0].lst_players[1].cards),call)
 
+        announcements_second_player=announcements(sort(self.teams_lst[1].lst_players[0].cards),call)
+        announcements_four_player=announcements(sort(self.teams_lst[1].lst_players[1].cards),call)
+
+        announcements_of_the_first_team = team_announcements(announcements_first_player,announcements_third_player )
+        announcements_of_the_second_team = team_announcements(announcements_second_player, announcements_four_player)
+
+        new_announcements_first_team = compare_team_announcements(announcements_of_the_first_team, announcements_of_the_second_team)[0]
+        new_announcements_second_team = compare_team_announcements(announcements_of_the_first_team, announcements_of_the_second_team)[1]
+       
+        self.teams_lst[0].lst_players[0].announcements = final_announcements(announcements_first_player, new_announcements_first_team)
+        self.teams_lst[0].lst_players[1].announcements = final_announcements(announcements_third_player, new_announcements_first_team)
+        self.teams_lst[1].lst_players[0].announcements = final_announcements(announcements_second_player, new_announcements_second_team)
+        self.teams_lst[1].lst_players[1].announcements = final_announcements(announcements_four_player, new_announcements_first_team)
+
+
+    
     def add_points_to_player(self):
         for teams in self.teams_lst:
                 for player in teams.lst_players:
                         player.points=points(player.announcements)
 
     def add_team_score(self):
-        self.teams_lst[0].score+=sum(self.teams_lst[0].lst_players[0].points)+sum(self.teams_lst[0].lst_players[1].points)
-        self.teams_lst[1].score+=sum(self.teams_lst[1].lst_players[0].points)+sum(self.teams_lst[1].lst_players[1].points)
+        # score=0
+        # # for x in self.teams_lst[1].lst_players[1].points:
+        #     # score+=int(x)
+        # print(self.teams_lst[0].lst_players[0].points)
+        # print(self.teams_lst[0].lst_players[1].points)
+        # print(self.teams_lst[1].lst_players[0].points)
+        # print(self.teams_lst[1].lst_players[1].points)
+        
+        # # print("score is {0}".format(score))
+        # # self.teams_lst[0].score+=score
+        self.teams_lst[0].score+=int(self.teams_lst[0].lst_players[0].points+self.teams_lst[0].lst_players[1].points)
+        self.teams_lst[1].score+=int(self.teams_lst[1].lst_players[0].points+self.teams_lst[1].lst_players[1].points)
 
 class Game:
 
@@ -86,7 +112,8 @@ class Game:
         while self.teams_lst[0].score<=150 and self.teams_lst[1].score<=150:
             game_round=Round(self.teams_lst,round_counter)
             game_round.add_hands_to_players()
-            game_round.add_announcements_to_players()
+            call=random_call()
+            game_round.add_announcements_to_players(call)
             game_round.add_points_to_player()
             game_round.add_team_score()
             self.round_lst.append(game_round)

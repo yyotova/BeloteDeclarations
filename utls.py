@@ -441,5 +441,5 @@ def points(announcements):
             else:
                 list_with_points.append(100)                
         
-        return list_with_points
+        return int(sum(list_with_points))
 
