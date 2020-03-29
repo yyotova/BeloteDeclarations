@@ -96,6 +96,8 @@ class Game:
         self.game_score=game_score
 
     def play_game(self,file_result):
+        self.teams_lst[0].score=0
+        self.teams_lst[1].score=0
         round_counter=0
         while self.teams_lst[0].score<150 and self.teams_lst[1].score<150:
             game_round=Round(self.teams_lst,round_counter)
@@ -105,8 +107,8 @@ class Game:
             game_round.add_points_to_player()
             if (int(self.teams_lst[0].lst_players[0].points+self.teams_lst[0].lst_players[1].points)+int(self.teams_lst[1].lst_players[0].points+self.teams_lst[1].lst_players[1].points))!=0:
                 write_to_file(["{0}+{1}".format(str(self.teams_lst[0].score),str(self.teams_lst[0].lst_players[0].points+self.teams_lst[0].lst_players[1].points)),"{0}+{1}".format(str(self.teams_lst[1].score),str(self.teams_lst[1].lst_players[0].points+self.teams_lst[1].lst_players[1].points))],file_result)
+                self.round_lst.append(game_round.get_dict_round())
             game_round.add_team_score()
-            self.round_lst.append(game_round.get_dict_round())
             round_counter+=1
 
     def get_dict_game(self):
