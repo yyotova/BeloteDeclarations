@@ -106,15 +106,14 @@ class Game:
             if (int(self.teams_lst[0].lst_players[0].points+self.teams_lst[0].lst_players[1].points)+int(self.teams_lst[1].lst_players[0].points+self.teams_lst[1].lst_players[1].points))!=0:
                 write_to_file(["{0}+{1}".format(str(self.teams_lst[0].score),str(self.teams_lst[0].lst_players[0].points+self.teams_lst[0].lst_players[1].points)),"{0}+{1}".format(str(self.teams_lst[1].score),str(self.teams_lst[1].lst_players[0].points+self.teams_lst[1].lst_players[1].points))],file_result)
             game_round.add_team_score()
-            self.round_lst.append(game_round)
+            self.round_lst.append(game_round.get_dict_round())
             round_counter+=1
 
     def get_dict_game(self):
         game_number_str="game {0}".format(self.game_number)
         list_of_dict_round=[]
         for rounds in self.round_lst:
-            list_of_dict_round.append(rounds.get_dict_round())
-        print(list_of_dict_round)
+            list_of_dict_round.append(rounds)
         return {game_number_str:list_of_dict_round}
 
     def update_score(self):
