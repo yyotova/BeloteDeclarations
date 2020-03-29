@@ -1,0 +1,320 @@
+{
+    "game 1": [
+        {
+            "round 0": [
+                {
+                    "n": [
+                        {
+                            "a": {
+                                "cards": [
+                                    "Qc",
+                                    "Qh",
+                                    "10c",
+                                    "Kh",
+                                    "Ad",
+                                    "Kd",
+                                    "7d",
+                                    "Ah"
+                                ],
+                                "announcements": [],
+                                "points": 0
+                            }
+                        },
+                        {
+                            "d": {
+                                "cards": [
+                                    "Jh",
+                                    "Kc",
+                                    "7c",
+                                    "7h",
+                                    "8c",
+                                    "8h",
+                                    "10s",
+                                    "Qd"
+                                ],
+                                "announcements": [],
+                                "points": 0
+                            }
+                        }
+                    ]
+                },
+                {
+                    "v": [
+                        {
+                            "c": {
+                                "cards": [
+                                    "Jd",
+                                    "7s",
+                                    "8s",
+                                    "Qs",
+                                    "9d",
+                                    "Js",
+                                    "9h",
+                                    "9s"
+                                ],
+                                "announcements": [
+                                    "tierce"
+                                ],
+                                "points": 20
+                            }
+                        },
+                        {
+                            "f": {
+                                "cards": [
+                                    "As",
+                                    "10h",
+                                    "Ks",
+                                    "8d",
+                                    "Jc",
+                                    "9c",
+                                    "Ac",
+                                    "10d"
+                                ],
+                                "announcements": [],
+                                "points": 0
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "round 1": [
+                {
+                    "n": [
+                        {
+                            "a": {
+                                "cards": [
+                                    "Qc",
+                                    "Qh",
+                                    "10c",
+                                    "Kh",
+                                    "Ad",
+                                    "Kd",
+                                    "7d",
+                                    "Ah"
+                                ],
+                                "announcements": [],
+                                "points": 0
+                            }
+                        },
+                        {
+                            "d": {
+                                "cards": [
+                                    "Jh",
+                                    "Kc",
+                                    "7c",
+                                    "7h",
+                                    "8c",
+                                    "8h",
+                                    "10s",
+                                    "Qd"
+                                ],
+                                "announcements": [],
+                                "points": 0
+                            }
+                        }
+                    ]
+                },
+                {
+                    "v": [
+                        {
+                            "c": {
+                                "cards": [
+                                    "Jd",
+                                    "7s",
+                                    "8s",
+                                    "Qs",
+                                    "9d",
+                                    "Js",
+                                    "9h",
+                                    "9s"
+                                ],
+                                "announcements": [
+                                    "tierce"
+                                ],
+                                "points": 20
+                            }
+                        },
+                        {
+                            "f": {
+                                "cards": [
+                                    "As",
+                                    "10h",
+                                    "Ks",
+                                    "8d",
+                                    "Jc",
+                                    "9c",
+                                    "Ac",
+                                    "10d"
+                                ],
+                                "announcements": [],
+                                "points": 0
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "round 2": [
+                {
+                    "n": [
+                        {
+                            "a": {
+                                "cards": [
+                                    "Qc",
+                                    "Qh",
+                                    "10c",
+                                    "Kh",
+                                    "Ad",
+                                    "Kd",
+                                    "7d",
+                                    "Ah"
+                                ],
+                                "announcements": [],
+                                "points": 0
+                            }
+                        },
+                        {
+                            "d": {
+                                "cards": [
+                                    "Jh",
+                                    "Kc",
+                                    "7c",
+                                    "7h",
+                                    "8c",
+                                    "8h",
+                                    "10s",
+                                    "Qd"
+                                ],
+                                "announcements": [],
+                                "points": 0
+                            }
+                        }
+                    ]
+                },
+                {
+                    "v": [
+                        {
+                            "c": {
+                                "cards": [
+                                    "Jd",
+                                    "7s",
+                                    "8s",
+                                    "Qs",
+                                    "9d",
+                                    "Js",
+                                    "9h",
+                                    "9s"
+                                ],
+                                "announcements": [
+                                    "tierce"
+                                ],
+                                "points": 20
+                            }
+                        },
+                        {
+                            "f": {
+                                "cards": [
+                                    "As",
+                                    "10h",
+                                    "Ks",
+                                    "8d",
+                                    "Jc",
+                                    "9c",
+                                    "Ac",
+                                    "10d"
+                                ],
+                                "announcements": [],
+                                "points": 0
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "round 3": [
+                {
+                    "n": [
+                        {
+                            "a": {
+                                "cards": [
+                                    "Qc",
+                                    "Qh",
+                                    "10c",
+                                    "Kh",
+                                    "Ad",
+                                    "Kd",
+                                    "7d",
+                                    "Ah"
+                                ],
+                                "announcements": [],
+                                "points": 0
+                            }
+                        },
+                        {
+                            "d": {
+                                "cards": [
+                                    "Jh",
+                                    "Kc",
+                                    "7c",
+                                    "7h",
+                                    "8c",
+                                    "8h",
+                                    "10s",
+                                    "Qd"
+                                ],
+                                "announcements": [],
+                                "points": 0
+                            }
+                        }
+                    ]
+                },
+                {
+                    "v": [
+                        {
+                            "c": {
+                                "cards": [
+                                    "Jd",
+                                    "7s",
+                                    "8s",
+                                    "Qs",
+                                    "9d",
+                                    "Js",
+                                    "9h",
+                                    "9s"
+                                ],
+                                "announcements": [
+                                    "tierce"
+                                ],
+                                "points": 20
+                            }
+                        },
+                        {
+                            "f": {
+                                "cards": [
+                                    "As",
+                                    "10h",
+                                    "Ks",
+                                    "8d",
+                                    "Jc",
+                                    "9c",
+                                    "Ac",
+                                    "10d"
+                                ],
+                                "announcements": [],
+                                "points": 0
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}{
+    "game 2": []
+}{
+    "game 3": []
+}
