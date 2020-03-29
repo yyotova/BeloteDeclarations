@@ -93,7 +93,7 @@ class Game:
         self.teams_lst=teams_lst
         self.round_lst=[]
         if game_score==None:
-            self.game_score=[]
+            self.game_score=[0,0]
         else:
             self.game_score=game_score
 
@@ -116,5 +116,10 @@ class Game:
             list_of_dict_round.append(rounds.get_dict_round())
         return {game_number_str:list_of_dict_round}
 
-    def save_score(file):
-        pass
+    def update_score(self):
+        if self.teams_lst[0].score>self.teams_lst[1].score:
+            self.game_score[0]+=1
+        elif    self.teams_lst[0].score<self.teams_lst[1].score:
+            self.game_score[1]+=1
+        return self.game_score
+           
