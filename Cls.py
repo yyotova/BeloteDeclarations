@@ -38,9 +38,10 @@ class Team:
         return self.score+other.score
 
 class Round:
-    def __init__(self,teams_lst ,round_number):
+    def __init__(self,teams_lst ,round_number,call):
         self.teams_lst=teams_lst
         self.round_number=round_number
+        self.call=call
     
     def __str__(self):
         return "round {0}".format(self.round_number)
@@ -50,7 +51,7 @@ class Round:
         
     def get_dict_round(self):
         round_number="round "+str(self.round_number)
-        return {round_number:[self.teams_lst[0].get_dict_team(),self.teams_lst[1].get_dict_team()]}
+        return {round_number:{self.call:[self.teams_lst[0].get_dict_team(),self.teams_lst[1].get_dict_team()]}}
 
     def add_hands_to_players(self):
         card_deck=create_deck_copy()
@@ -100,9 +101,9 @@ class Game:
         self.teams_lst[1].score=0
         round_counter=0
         while self.teams_lst[0].score<150 and self.teams_lst[1].score<150:
-            game_round=Round(self.teams_lst,round_counter)
-            game_round.add_hands_to_players()
             call=random_call()
+            game_round=Round(self.teams_lst,round_counter,call)
+            game_round.add_hands_to_players()
             game_round.add_announcements_to_players(call)
             game_round.add_points_to_player()
             if (int(self.teams_lst[0].lst_players[0].points+self.teams_lst[0].lst_players[1].points)+int(self.teams_lst[1].lst_players[0].points+self.teams_lst[1].lst_players[1].points))!=0:
