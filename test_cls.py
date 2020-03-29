@@ -63,10 +63,17 @@ class test_round_class(unittest.TestCase):
 	def test_round_class_player_points(self):
 		first_team=Team("Severozapada",[Player("Petar"),Player("Yoanna")])
 		second_team=Team("Ne_moga_da_izmislq_dr_ime",[Player("Metar"),Player("Ivana")])
+		# round_1.add_hands_to_players()
+		first_team.lst_players[0].cards=["7c","8c","9c","10c","Jd","Kd","Qd","As"]
+		first_team.lst_players[1].cards=["7s","8d","9d","10s","Js","Kc","Qc","Ad"]
+		second_team.lst_players[0].cards=["7d","8s","9s","10d","Jd","Kh","Qh","As"]
+		second_team.lst_players[1].cards=["7h","8h","9h","10c","Js","Ks","Qs","Ah"]
+
 		round_1=Round([first_team,second_team],1)
-		round_1.add_hands_to_players()
+
 		round_1.add_announcements_to_players()
 		round_1.add_points_to_player()
+		round_1.add_team_score()
 		res=round_1.get_dict_round()
 		# print(json.dumps(res,indent=4))
 		
@@ -78,7 +85,8 @@ class test_round_class(unittest.TestCase):
 		round_1.add_announcements_to_players()
 		round_1.add_points_to_player()
 		round_1.add_team_score()
-		ls=[round_1.teams_lst[0].score,round_1.teams_lst[1].score]
+		# round_1.add_team_score()
+		# ls=[round_1.teams_lst[0].score,round_1.teams_lst[1].score]
 		# print(ls)
 		# print(type(round_1.teams_lst[0].score))
 
@@ -92,7 +100,7 @@ class test_game_class(unittest.TestCase):
 		test_game=Game(1,[first_team,second_team])
 		test_game.play_game()
 		print(test_game.round_lst)
-		# pass
+		
 
 
 		
