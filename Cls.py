@@ -96,6 +96,8 @@ class Game:
         self.game_score=game_score
 
     def play_game(self,file_result):
+        self.teams_lst[0].score=0
+        self.teams_lst[1].score=0
         round_counter=0
         while self.teams_lst[0].score<150 and self.teams_lst[1].score<150:
             game_round=Round(self.teams_lst,round_counter)
