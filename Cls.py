@@ -114,6 +114,7 @@ class Game:
         list_of_dict_round=[]
         for rounds in self.round_lst:
             list_of_dict_round.append(rounds.get_dict_round())
+        print(list_of_dict_round)
         return {game_number_str:list_of_dict_round}
 
     def update_score(self):
