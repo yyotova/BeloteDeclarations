@@ -24,6 +24,8 @@ def main():
 
 	score=[0,0]
 	count_games=1
+	json_file=open("data.json","w")
+	json_file.close()
 	json_file=open("data.json","a")
 	file=create_file_result([first_team,second_team])
 	while score[0]<2 and score[1]<2:
@@ -34,6 +36,7 @@ def main():
 		write_end_of_file(score,file.name)
 		count_games+=1
 	json_file.close()
+	file.close()
 
 
 if __name__ == '__main__':

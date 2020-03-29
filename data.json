@@ -1,0 +1,559 @@
+{
+    "game 1": [
+        {
+            "round 0": [
+                {
+                    "Nie": [
+                        {
+                            "a": {
+                                "cards": [
+                                    "8h",
+                                    "Qs",
+                                    "10s",
+                                    "Ad",
+                                    "9s",
+                                    "As",
+                                    "10d",
+                                    "Js"
+                                ],
+                                "announcements": [],
+                                "points": 0
+                            }
+                        },
+                        {
+                            "s": {
+                                "cards": [
+                                    "7h",
+                                    "10h",
+                                    "7c",
+                                    "9c",
+                                    "Kd",
+                                    "Jh",
+                                    "10c",
+                                    "Qd"
+                                ],
+                                "announcements": [],
+                                "points": 0
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Vie": [
+                        {
+                            "d": {
+                                "cards": [
+                                    "8d",
+                                    "Jd",
+                                    "Jc",
+                                    "8s",
+                                    "Kh",
+                                    "7d",
+                                    "8c",
+                                    "9h"
+                                ],
+                                "announcements": [],
+                                "points": 0
+                            }
+                        },
+                        {
+                            "f": {
+                                "cards": [
+                                    "Qh",
+                                    "Ac",
+                                    "Ks",
+                                    "9d",
+                                    "Ah",
+                                    "Qc",
+                                    "7s",
+                                    "Kc"
+                                ],
+                                "announcements": [
+                                    "belote",
+                                    "tierce"
+                                ],
+                                "points": 40
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "round 1": [
+                {
+                    "Nie": [
+                        {
+                            "a": {
+                                "cards": [
+                                    "8h",
+                                    "Qs",
+                                    "10s",
+                                    "Ad",
+                                    "9s",
+                                    "As",
+                                    "10d",
+                                    "Js"
+                                ],
+                                "announcements": [],
+                                "points": 0
+                            }
+                        },
+                        {
+                            "s": {
+                                "cards": [
+                                    "7h",
+                                    "10h",
+                                    "7c",
+                                    "9c",
+                                    "Kd",
+                                    "Jh",
+                                    "10c",
+                                    "Qd"
+                                ],
+                                "announcements": [],
+                                "points": 0
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Vie": [
+                        {
+                            "d": {
+                                "cards": [
+                                    "8d",
+                                    "Jd",
+                                    "Jc",
+                                    "8s",
+                                    "Kh",
+                                    "7d",
+                                    "8c",
+                                    "9h"
+                                ],
+                                "announcements": [],
+                                "points": 0
+                            }
+                        },
+                        {
+                            "f": {
+                                "cards": [
+                                    "Qh",
+                                    "Ac",
+                                    "Ks",
+                                    "9d",
+                                    "Ah",
+                                    "Qc",
+                                    "7s",
+                                    "Kc"
+                                ],
+                                "announcements": [
+                                    "belote",
+                                    "tierce"
+                                ],
+                                "points": 40
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "round 2": [
+                {
+                    "Nie": [
+                        {
+                            "a": {
+                                "cards": [
+                                    "8h",
+                                    "Qs",
+                                    "10s",
+                                    "Ad",
+                                    "9s",
+                                    "As",
+                                    "10d",
+                                    "Js"
+                                ],
+                                "announcements": [],
+                                "points": 0
+                            }
+                        },
+                        {
+                            "s": {
+                                "cards": [
+                                    "7h",
+                                    "10h",
+                                    "7c",
+                                    "9c",
+                                    "Kd",
+                                    "Jh",
+                                    "10c",
+                                    "Qd"
+                                ],
+                                "announcements": [],
+                                "points": 0
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Vie": [
+                        {
+                            "d": {
+                                "cards": [
+                                    "8d",
+                                    "Jd",
+                                    "Jc",
+                                    "8s",
+                                    "Kh",
+                                    "7d",
+                                    "8c",
+                                    "9h"
+                                ],
+                                "announcements": [],
+                                "points": 0
+                            }
+                        },
+                        {
+                            "f": {
+                                "cards": [
+                                    "Qh",
+                                    "Ac",
+                                    "Ks",
+                                    "9d",
+                                    "Ah",
+                                    "Qc",
+                                    "7s",
+                                    "Kc"
+                                ],
+                                "announcements": [
+                                    "belote",
+                                    "tierce"
+                                ],
+                                "points": 40
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "round 3": [
+                {
+                    "Nie": [
+                        {
+                            "a": {
+                                "cards": [
+                                    "8h",
+                                    "Qs",
+                                    "10s",
+                                    "Ad",
+                                    "9s",
+                                    "As",
+                                    "10d",
+                                    "Js"
+                                ],
+                                "announcements": [],
+                                "points": 0
+                            }
+                        },
+                        {
+                            "s": {
+                                "cards": [
+                                    "7h",
+                                    "10h",
+                                    "7c",
+                                    "9c",
+                                    "Kd",
+                                    "Jh",
+                                    "10c",
+                                    "Qd"
+                                ],
+                                "announcements": [],
+                                "points": 0
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Vie": [
+                        {
+                            "d": {
+                                "cards": [
+                                    "8d",
+                                    "Jd",
+                                    "Jc",
+                                    "8s",
+                                    "Kh",
+                                    "7d",
+                                    "8c",
+                                    "9h"
+                                ],
+                                "announcements": [],
+                                "points": 0
+                            }
+                        },
+                        {
+                            "f": {
+                                "cards": [
+                                    "Qh",
+                                    "Ac",
+                                    "Ks",
+                                    "9d",
+                                    "Ah",
+                                    "Qc",
+                                    "7s",
+                                    "Kc"
+                                ],
+                                "announcements": [
+                                    "belote",
+                                    "tierce"
+                                ],
+                                "points": 40
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "round 4": [
+                {
+                    "Nie": [
+                        {
+                            "a": {
+                                "cards": [
+                                    "8h",
+                                    "Qs",
+                                    "10s",
+                                    "Ad",
+                                    "9s",
+                                    "As",
+                                    "10d",
+                                    "Js"
+                                ],
+                                "announcements": [],
+                                "points": 0
+                            }
+                        },
+                        {
+                            "s": {
+                                "cards": [
+                                    "7h",
+                                    "10h",
+                                    "7c",
+                                    "9c",
+                                    "Kd",
+                                    "Jh",
+                                    "10c",
+                                    "Qd"
+                                ],
+                                "announcements": [],
+                                "points": 0
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Vie": [
+                        {
+                            "d": {
+                                "cards": [
+                                    "8d",
+                                    "Jd",
+                                    "Jc",
+                                    "8s",
+                                    "Kh",
+                                    "7d",
+                                    "8c",
+                                    "9h"
+                                ],
+                                "announcements": [],
+                                "points": 0
+                            }
+                        },
+                        {
+                            "f": {
+                                "cards": [
+                                    "Qh",
+                                    "Ac",
+                                    "Ks",
+                                    "9d",
+                                    "Ah",
+                                    "Qc",
+                                    "7s",
+                                    "Kc"
+                                ],
+                                "announcements": [
+                                    "belote",
+                                    "tierce"
+                                ],
+                                "points": 40
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "round 5": [
+                {
+                    "Nie": [
+                        {
+                            "a": {
+                                "cards": [
+                                    "8h",
+                                    "Qs",
+                                    "10s",
+                                    "Ad",
+                                    "9s",
+                                    "As",
+                                    "10d",
+                                    "Js"
+                                ],
+                                "announcements": [],
+                                "points": 0
+                            }
+                        },
+                        {
+                            "s": {
+                                "cards": [
+                                    "7h",
+                                    "10h",
+                                    "7c",
+                                    "9c",
+                                    "Kd",
+                                    "Jh",
+                                    "10c",
+                                    "Qd"
+                                ],
+                                "announcements": [],
+                                "points": 0
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Vie": [
+                        {
+                            "d": {
+                                "cards": [
+                                    "8d",
+                                    "Jd",
+                                    "Jc",
+                                    "8s",
+                                    "Kh",
+                                    "7d",
+                                    "8c",
+                                    "9h"
+                                ],
+                                "announcements": [],
+                                "points": 0
+                            }
+                        },
+                        {
+                            "f": {
+                                "cards": [
+                                    "Qh",
+                                    "Ac",
+                                    "Ks",
+                                    "9d",
+                                    "Ah",
+                                    "Qc",
+                                    "7s",
+                                    "Kc"
+                                ],
+                                "announcements": [
+                                    "belote",
+                                    "tierce"
+                                ],
+                                "points": 40
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "round 6": [
+                {
+                    "Nie": [
+                        {
+                            "a": {
+                                "cards": [
+                                    "8h",
+                                    "Qs",
+                                    "10s",
+                                    "Ad",
+                                    "9s",
+                                    "As",
+                                    "10d",
+                                    "Js"
+                                ],
+                                "announcements": [],
+                                "points": 0
+                            }
+                        },
+                        {
+                            "s": {
+                                "cards": [
+                                    "7h",
+                                    "10h",
+                                    "7c",
+                                    "9c",
+                                    "Kd",
+                                    "Jh",
+                                    "10c",
+                                    "Qd"
+                                ],
+                                "announcements": [],
+                                "points": 0
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Vie": [
+                        {
+                            "d": {
+                                "cards": [
+                                    "8d",
+                                    "Jd",
+                                    "Jc",
+                                    "8s",
+                                    "Kh",
+                                    "7d",
+                                    "8c",
+                                    "9h"
+                                ],
+                                "announcements": [],
+                                "points": 0
+                            }
+                        },
+                        {
+                            "f": {
+                                "cards": [
+                                    "Qh",
+                                    "Ac",
+                                    "Ks",
+                                    "9d",
+                                    "Ah",
+                                    "Qc",
+                                    "7s",
+                                    "Kc"
+                                ],
+                                "announcements": [
+                                    "belote",
+                                    "tierce"
+                                ],
+                                "points": 40
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}{
+    "game 2": []
+}
