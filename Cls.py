@@ -8,9 +8,7 @@ class Player:
     def __init__(self,name):
         self.name=name
         self.cards=[]
-        #get belot 50,100 etc
         self.announcements=[]
-        #get points after round
         self.points = 0
 
     def __str__(self):
@@ -75,7 +73,7 @@ class Round:
         self.teams_lst[0].lst_players[0].announcements = final_announcements(announcements_first_player, new_announcements_first_team)
         self.teams_lst[0].lst_players[1].announcements = final_announcements(announcements_third_player, new_announcements_first_team)
         self.teams_lst[1].lst_players[0].announcements = final_announcements(announcements_second_player, new_announcements_second_team)
-        self.teams_lst[1].lst_players[1].announcements = final_announcements(announcements_four_player, new_announcements_first_team)
+        self.teams_lst[1].lst_players[1].announcements = final_announcements(announcements_four_player, new_announcements_second_team)
 
 
     

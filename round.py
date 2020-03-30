@@ -1,11 +1,18 @@
-# from Cls import Player, Team
 from utls import random_hand, sort, create_deck_copy, random_call, announcements
 from copy import deepcopy
-'''
-from belote import get_players
-'''
 
 def team_announcements(first_player, second_player):
+    result = {'belote': [],
+    'tierce': [],
+    'quatre': [],
+    'quinte': [],
+    'carre of 9s': [],
+    'carre of 10s': [],
+    'carre of Js': [],
+    'carre of Qs': [],
+    'carre of Ks': [],
+    'carre of As': []
+    }
     first_player_cp = deepcopy(first_player)
     for key, value in second_player.items():
         if key in first_player_cp:
@@ -36,12 +43,12 @@ def compare_team_announcements(first_team, second_team):
 
         if 'tierce' in first_team and 'tierce' in second_team:
             for tierce in first_team['tierce']:
-                suite = int(tierce[2][:-1])
-                for tierce2  in second_team['tierce']:
-                    suite2 = int(tierce2[2][:-1])
-                    if suite2 > suite:
-                        first_team['tierce'].remove(tierce)
-                        break
+                    suite = int(tierce[2][:-1])
+                    for tierce2  in second_team['tierce']:
+                        suite2 = int(tierce2[2][:-1])
+                        if suite2 > suite:
+                            first_team['tierce'].remove(tierce)
+                            break
             for tierce in second_team['tierce']:
                 suite = int(tierce[2][:-1])
                 for tierce2  in first_team['tierce']:
@@ -116,78 +123,6 @@ def final_announcements(announce_player, team_announcements):
                     if a not in value:
                         announce_player[announce].remove(a)
         return list(key for key in announce_player.keys() if len(announce_player[key]) > 0)
-
-def round():
-    # call = random_call()
-    # call = 'All trumps'
-    # card_deck=create_deck_copy()
-    # announcements_of_the_first_team ={}
-    # announcements_of_the_second_team ={}
-
-    # first_team=Team("Nie",[Player("Gosho"),Player("Pesho")])
-    # second_team=Team("Vie",[Player("Kiro"),Player("Miro")])
-    
-    # print('rank: ', call)
-    # #Player1(first team)
-    # # first_team.lst_players[0].cards =random_hand(card_deck) 
-    # first_team.lst_players[0].cards = ['Ad', 'Qd', 'Kc', 'Jc', '7h', '9c', 'Kh', '8d']
-    # print('Cards Player1: ', first_team.lst_players[0].cards)
-
-    # print('announcements:', announcements(sort(first_team.lst_players[0].cards), call))
-    # announcements_first_player = announcements(sort(first_team.lst_players[0].cards), call)
-   
-    # #Player2(second team)
-    # # second_team.lst_players[0].cards =random_hand(card_deck)
-    # second_team.lst_players[0].cards = ['9d', 'Ac', 'Jd', '10c', 'Kd', 'Qc', 'Ah', '10d'] 
-    # print('Cards Player2: ', second_team.lst_players[0].cards)
-
-    # print('announcements:', announcements(sort(second_team.lst_players[0].cards), call))
-    # announcements_second_player = announcements(sort(second_team.lst_players[0].cards), call)
-   
-    # #Player3(first team)
-    # # first_team.lst_players[1].cards =random_hand(card_deck) 
-    # first_team.lst_players[1].cards = ['10h', '7c', '8s', '10s', 'Qh', 'As', '8c', 'Jh']
-    # print('Cards Player3: ', first_team.lst_players[1].cards)
-
-    # print('announcements:', announcements(sort(first_team.lst_players[1].cards), call))
-    # announcements_third_player = announcements(sort(first_team.lst_players[1].cards), call)
-    
-    # #Player4(second team)
-    # # second_team.lst_players[1].cards =random_hand(card_deck)
-    # second_team.lst_players[1].cards = ['Qs', '7s', '7d', '8h', 'Js', 'Ks', '9s', '9h']
-    # print('Cards Player4: ', second_team.lst_players[1].cards)
-
-    # print('announcements:', announcements(sort(second_team.lst_players[1].cards), call))
-    # announcements_fourth_player = announcements(sort(second_team.lst_players[1].cards), call)
-
-    # announcements_of_the_first_team = team_announcements(announcements_first_player, announcements_third_player)
-    # announcements_of_the_second_team = team_announcements(announcements_second_player, announcements_fourth_player)
-
-    # new_announcements_first_team = compare_team_announcements(announcements_of_the_first_team, announcements_of_the_second_team)[0]
-    # new_announcements_second_team = compare_team_announcements(announcements_of_the_first_team, announcements_of_the_second_team)[1]
-
-    # print('final announcementsTeam1: ', new_announcements_first_team)
-    # print('final announcementsTeam2: ', new_announcements_second_team)
-
-    # first_team.lst_players[0].announcements = final_announcements(announcements_first_player, new_announcements_first_team)
-    # first_team.lst_players[1].announcements = final_announcements(announcements_third_player, new_announcements_first_team)
-
-    # second_team.lst_players[0].announcements = final_announcements(announcements_second_player, new_announcements_second_team)
-    # second_team.lst_players[1].announcements = final_announcements(announcements_fourth_player, new_announcements_second_team)
-
-    # print('final announcementsPlayer1: ', first_team.lst_players[0].announcements)
-    # print('final announcementsPlayer2: ', second_team.lst_players[0].announcements)
-    # print('final announcementsPlayer3: ', first_team.lst_players[1].announcements)
-    # print('final announcementsPlayer4: ', second_team.lst_players[1].announcements)
-
-    pass
-
-
-
-
-
-def main():
-    round()
 
 if __name__ == '__main__':
     main()
