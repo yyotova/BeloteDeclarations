@@ -6,8 +6,8 @@ def main():
     first_team_name = input("Team 1 name: ")
     second_team_name = input("Team 2 name: ")
 
-    firts_team_players = input(f'{first_team_name} players: ').split(",")
-    second_team_players = input(f'{second_team_name} players: ').split(",")
+    firts_team_players = input(f'"{first_team_name}" players: ').split(",")
+    second_team_players = input(f'"{second_team_name}" players: ').split(",")
 
     player1_first_team = firts_team_players[0]
     player2_first_team =firts_team_players[1]
@@ -25,10 +25,12 @@ def main():
 
     score=[0,0]
     count_games=1
+
     json_file=open("data.json","w")
     json_file.close()
     json_file=open("data.json","a")
     file=create_file_result([first_team,second_team])
+
     while score[0]<2 and score[1]<2:
         game=Game(count_games,[first_team,second_team],score)
         game.play_game(file.name)

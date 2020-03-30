@@ -62,7 +62,6 @@ def sort(lst):
     list_with_hearts=[]
     list_with_spades=[]
 #four lists with each rank
-
     for card in lst:
         if len(card) == 2:
             if card[1] == "c":
@@ -253,7 +252,6 @@ def check_for_announcements(all_sorted_cards, sorted_cards_by_rank):
 
     result = {}
 
-
     if len(has_belote(sorted_cards_by_rank)) > 0:
         announcements['belote'] =  has_belote(sorted_cards_by_rank)
 
@@ -348,7 +346,6 @@ def remove_sequence_if_there_is_a_carre(announcements):
 
     return announcements
 
-
 #for one player at the round 
 def announcements(sorted_cards, round_call):
     announcements = {'belote': [],
@@ -442,4 +439,3 @@ def points(announcements):
                 list_with_points.append(100)                
         
         return int(sum(list_with_points))
-
