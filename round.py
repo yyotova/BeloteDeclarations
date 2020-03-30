@@ -13,14 +13,27 @@ def team_announcements(first_player, second_player):
     'carre of Ks': [],
     'carre of As': []
     }
-    first_player_cp = deepcopy(first_player)
-    for key, value in second_player.items():
-        if key in first_player_cp:
-            for cards in value:
-                first_player_cp[key].append(cards)
+    for key, value in first_player.items():
+        if type(value[0]) == list:
+            for v in value:
+                result[key].append(v)
         else:
-            first_player_cp[key] = value
-    return first_player_cp
+            result[key].append(value)
+
+    for key, value in second_player.items():
+        if type(value[0]) == list:
+            for v in value:
+                result[key].append(v)
+        else:
+            result[key].append(value)
+
+    announcements = {}
+
+    for key, value in result.items():
+        if len(value) != 0:
+            announcements[key] = value
+
+    return announcements
 
 def compare_team_announcements(first_team, second_team):
     if len(first_team) == 0 and len(second_team) == 0:
@@ -123,6 +136,3 @@ def final_announcements(announce_player, team_announcements):
                     if a not in value:
                         announce_player[announce].remove(a)
         return list(key for key in announce_player.keys() if len(announce_player[key]) > 0)
-
-if __name__ == '__main__':
-    main()
