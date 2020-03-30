@@ -1,0 +1,2381 @@
+{
+    "game 1": [
+        {
+            "round 0": {
+                "Diamonds": [
+                    {
+                        "Mecheta": [
+                            {
+                                "Pesho": {
+                                    "cards": [
+                                        "Qc",
+                                        "9d",
+                                        "Qs",
+                                        "9s",
+                                        "8c",
+                                        "9h",
+                                        "10d",
+                                        "Jc"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            },
+                            {
+                                " Gosho": {
+                                    "cards": [
+                                        "8h",
+                                        "8s",
+                                        "10s",
+                                        "As",
+                                        "8d",
+                                        "Qh",
+                                        "Jd",
+                                        "7h"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "Koteta": [
+                            {
+                                "Anni": {
+                                    "cards": [
+                                        "Ks",
+                                        "Kc",
+                                        "7s",
+                                        "10h",
+                                        "7c",
+                                        "Ac",
+                                        "7d",
+                                        "Ad"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            },
+                            {
+                                " Mimi": {
+                                    "cards": [
+                                        "Kd",
+                                        "10c",
+                                        "Ah",
+                                        "Qd",
+                                        "Js",
+                                        "Jh",
+                                        "9c",
+                                        "Kh"
+                                    ],
+                                    "announcements": [
+                                        "belote"
+                                    ],
+                                    "points": 20
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "round 1": {
+                "Spades": [
+                    {
+                        "Mecheta": [
+                            {
+                                "Pesho": {
+                                    "cards": [
+                                        "Ad",
+                                        "9c",
+                                        "As",
+                                        "Ac",
+                                        "Qc",
+                                        "8d",
+                                        "Ah",
+                                        "7s"
+                                    ],
+                                    "announcements": [
+                                        "carre of As"
+                                    ],
+                                    "points": 100
+                                }
+                            },
+                            {
+                                " Gosho": {
+                                    "cards": [
+                                        "Ks",
+                                        "7h",
+                                        "9s",
+                                        "9d",
+                                        "8h",
+                                        "Jd",
+                                        "10h",
+                                        "8s"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "Koteta": [
+                            {
+                                "Anni": {
+                                    "cards": [
+                                        "Jc",
+                                        "7c",
+                                        "Qd",
+                                        "8c",
+                                        "Jh",
+                                        "10c",
+                                        "Qs",
+                                        "10s"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            },
+                            {
+                                " Mimi": {
+                                    "cards": [
+                                        "Kd",
+                                        "10d",
+                                        "Kh",
+                                        "Js",
+                                        "7d",
+                                        "9h",
+                                        "Kc",
+                                        "Qh"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "round 2": {
+                "No trumps": [
+                    {
+                        "Mecheta": [
+                            {
+                                "Pesho": {
+                                    "cards": [
+                                        "Ks",
+                                        "Qd",
+                                        "9s",
+                                        "7d",
+                                        "Ad",
+                                        "Jh",
+                                        "Qc",
+                                        "Jc"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            },
+                            {
+                                " Gosho": {
+                                    "cards": [
+                                        "7c",
+                                        "8c",
+                                        "10h",
+                                        "7h",
+                                        "10d",
+                                        "8s",
+                                        "10s",
+                                        "9d"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "Koteta": [
+                            {
+                                "Anni": {
+                                    "cards": [
+                                        "Kd",
+                                        "7s",
+                                        "9h",
+                                        "Qs",
+                                        "Jd",
+                                        "Ac",
+                                        "8h",
+                                        "8d"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            },
+                            {
+                                " Mimi": {
+                                    "cards": [
+                                        "Ah",
+                                        "Qh",
+                                        "As",
+                                        "10c",
+                                        "Kh",
+                                        "Js",
+                                        "9c",
+                                        "Kc"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "round 3": {
+                "Clubs": [
+                    {
+                        "Mecheta": [
+                            {
+                                "Pesho": {
+                                    "cards": [
+                                        "Ks",
+                                        "Qh",
+                                        "Qc",
+                                        "Qd",
+                                        "Ac",
+                                        "As",
+                                        "Kc",
+                                        "Kh"
+                                    ],
+                                    "announcements": [
+                                        "belote",
+                                        "tierce"
+                                    ],
+                                    "points": 40
+                                }
+                            },
+                            {
+                                " Gosho": {
+                                    "cards": [
+                                        "Jc",
+                                        "10d",
+                                        "8d",
+                                        "9d",
+                                        "Js",
+                                        "7h",
+                                        "8s",
+                                        "8h"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "Koteta": [
+                            {
+                                "Anni": {
+                                    "cards": [
+                                        "Ah",
+                                        "Qs",
+                                        "9c",
+                                        "Jd",
+                                        "Kd",
+                                        "Jh",
+                                        "8c",
+                                        "9h"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            },
+                            {
+                                " Mimi": {
+                                    "cards": [
+                                        "10h",
+                                        "10c",
+                                        "7d",
+                                        "9s",
+                                        "10s",
+                                        "Ad",
+                                        "7c",
+                                        "7s"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "round 4": {
+                "Diamonds": [
+                    {
+                        "Mecheta": [
+                            {
+                                "Pesho": {
+                                    "cards": [
+                                        "7d",
+                                        "Qc",
+                                        "Kd",
+                                        "Jd",
+                                        "10d",
+                                        "8d",
+                                        "10s",
+                                        "10c"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            },
+                            {
+                                " Gosho": {
+                                    "cards": [
+                                        "8s",
+                                        "Kh",
+                                        "Qd",
+                                        "Jc",
+                                        "9c",
+                                        "Jh",
+                                        "Kc",
+                                        "8c"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "Koteta": [
+                            {
+                                "Anni": {
+                                    "cards": [
+                                        "Js",
+                                        "9h",
+                                        "9d",
+                                        "Ah",
+                                        "8h",
+                                        "Ks",
+                                        "Qh",
+                                        "7c"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            },
+                            {
+                                " Mimi": {
+                                    "cards": [
+                                        "As",
+                                        "Qs",
+                                        "9s",
+                                        "7s",
+                                        "Ac",
+                                        "7h",
+                                        "Ad",
+                                        "10h"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "round 5": {
+                "Clubs": [
+                    {
+                        "Mecheta": [
+                            {
+                                "Pesho": {
+                                    "cards": [
+                                        "10h",
+                                        "Js",
+                                        "Qc",
+                                        "8s",
+                                        "Ac",
+                                        "9c",
+                                        "Ad",
+                                        "8d"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            },
+                            {
+                                " Gosho": {
+                                    "cards": [
+                                        "Ks",
+                                        "Kc",
+                                        "7h",
+                                        "7s",
+                                        "Jd",
+                                        "10s",
+                                        "Jh",
+                                        "8c"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "Koteta": [
+                            {
+                                "Anni": {
+                                    "cards": [
+                                        "Qh",
+                                        "Kh",
+                                        "As",
+                                        "Kd",
+                                        "Qd",
+                                        "9h",
+                                        "10d",
+                                        "10c"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            },
+                            {
+                                " Mimi": {
+                                    "cards": [
+                                        "Ah",
+                                        "7c",
+                                        "7d",
+                                        "Jc",
+                                        "Qs",
+                                        "9d",
+                                        "9s",
+                                        "8h"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "round 6": {
+                "All trumps": [
+                    {
+                        "Mecheta": [
+                            {
+                                "Pesho": {
+                                    "cards": [
+                                        "9c",
+                                        "10s",
+                                        "7s",
+                                        "8c",
+                                        "10h",
+                                        "Ah",
+                                        "9s",
+                                        "As"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            },
+                            {
+                                " Gosho": {
+                                    "cards": [
+                                        "Jd",
+                                        "Jc",
+                                        "7h",
+                                        "Kd",
+                                        "Kc",
+                                        "9d",
+                                        "8s",
+                                        "Jh"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "Koteta": [
+                            {
+                                "Anni": {
+                                    "cards": [
+                                        "10c",
+                                        "7d",
+                                        "Qh",
+                                        "7c",
+                                        "Ks",
+                                        "Qd",
+                                        "Js",
+                                        "8d"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            },
+                            {
+                                " Mimi": {
+                                    "cards": [
+                                        "Ac",
+                                        "10d",
+                                        "Kh",
+                                        "9h",
+                                        "Qs",
+                                        "8h",
+                                        "Ad",
+                                        "Qc"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "round 7": {
+                "Spades": [
+                    {
+                        "Mecheta": [
+                            {
+                                "Pesho": {
+                                    "cards": [
+                                        "9d",
+                                        "Ac",
+                                        "Kc",
+                                        "8d",
+                                        "9c",
+                                        "Kd",
+                                        "Qc",
+                                        "Ks"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            },
+                            {
+                                " Gosho": {
+                                    "cards": [
+                                        "9s",
+                                        "Js",
+                                        "7h",
+                                        "7c",
+                                        "10d",
+                                        "Qs",
+                                        "Ad",
+                                        "10h"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "Koteta": [
+                            {
+                                "Anni": {
+                                    "cards": [
+                                        "8h",
+                                        "As",
+                                        "Kh",
+                                        "7d",
+                                        "8c",
+                                        "8s",
+                                        "Jh",
+                                        "10c"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            },
+                            {
+                                " Mimi": {
+                                    "cards": [
+                                        "10s",
+                                        "Qd",
+                                        "Ah",
+                                        "7s",
+                                        "Qh",
+                                        "Jd",
+                                        "Jc",
+                                        "9h"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "round 8": {
+                "Spades": [
+                    {
+                        "Mecheta": [
+                            {
+                                "Pesho": {
+                                    "cards": [
+                                        "Jc",
+                                        "Js",
+                                        "Ad",
+                                        "7c",
+                                        "Qd",
+                                        "7s",
+                                        "Ks",
+                                        "Qc"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            },
+                            {
+                                " Gosho": {
+                                    "cards": [
+                                        "9c",
+                                        "8h",
+                                        "10s",
+                                        "7h",
+                                        "10d",
+                                        "8s",
+                                        "8c",
+                                        "9s"
+                                    ],
+                                    "announcements": [
+                                        "tierce"
+                                    ],
+                                    "points": 20
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "Koteta": [
+                            {
+                                "Anni": {
+                                    "cards": [
+                                        "Jh",
+                                        "Qh",
+                                        "8d",
+                                        "Kd",
+                                        "9d",
+                                        "10h",
+                                        "Kh",
+                                        "Kc"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            },
+                            {
+                                " Mimi": {
+                                    "cards": [
+                                        "9h",
+                                        "Ac",
+                                        "Jd",
+                                        "Qs",
+                                        "7d",
+                                        "As",
+                                        "Ah",
+                                        "10c"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}{
+    "game 2": [
+        {
+            "round 0": {
+                "All trumps": [
+                    {
+                        "Mecheta": [
+                            {
+                                "Pesho": {
+                                    "cards": [
+                                        "Kc",
+                                        "9h",
+                                        "7d",
+                                        "Jh",
+                                        "Qh",
+                                        "9s",
+                                        "As",
+                                        "Ac"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            },
+                            {
+                                " Gosho": {
+                                    "cards": [
+                                        "10d",
+                                        "Qd",
+                                        "Kd",
+                                        "8c",
+                                        "Ah",
+                                        "Ad",
+                                        "8h",
+                                        "Jc"
+                                    ],
+                                    "announcements": [
+                                        "belote"
+                                    ],
+                                    "points": 20
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "Koteta": [
+                            {
+                                "Anni": {
+                                    "cards": [
+                                        "Qs",
+                                        "Qc",
+                                        "8d",
+                                        "10s",
+                                        "7s",
+                                        "10c",
+                                        "Js",
+                                        "Ks"
+                                    ],
+                                    "announcements": [
+                                        "belote",
+                                        "quatre"
+                                    ],
+                                    "points": 120
+                                }
+                            },
+                            {
+                                " Mimi": {
+                                    "cards": [
+                                        "9c",
+                                        "7c",
+                                        "10h",
+                                        "7h",
+                                        "9d",
+                                        "Jd",
+                                        "Kh",
+                                        "8s"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "round 1": {
+                "No trumps": [
+                    {
+                        "Mecheta": [
+                            {
+                                "Pesho": {
+                                    "cards": [
+                                        "9h",
+                                        "10d",
+                                        "9c",
+                                        "Kc",
+                                        "10h",
+                                        "Jh",
+                                        "8s",
+                                        "7c"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            },
+                            {
+                                " Gosho": {
+                                    "cards": [
+                                        "10c",
+                                        "Qc",
+                                        "Kh",
+                                        "Qs",
+                                        "8d",
+                                        "9s",
+                                        "As",
+                                        "Jd"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "Koteta": [
+                            {
+                                "Anni": {
+                                    "cards": [
+                                        "7s",
+                                        "Kd",
+                                        "Jc",
+                                        "Ah",
+                                        "7h",
+                                        "Js",
+                                        "8c",
+                                        "8h"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            },
+                            {
+                                " Mimi": {
+                                    "cards": [
+                                        "Ad",
+                                        "Ac",
+                                        "Qh",
+                                        "Ks",
+                                        "7d",
+                                        "9d",
+                                        "Qd",
+                                        "10s"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "round 2": {
+                "All trumps": [
+                    {
+                        "Mecheta": [
+                            {
+                                "Pesho": {
+                                    "cards": [
+                                        "7c",
+                                        "Kd",
+                                        "Qd",
+                                        "9h",
+                                        "Qh",
+                                        "As",
+                                        "9c",
+                                        "Kc"
+                                    ],
+                                    "announcements": [
+                                        "belote"
+                                    ],
+                                    "points": 20
+                                }
+                            },
+                            {
+                                " Gosho": {
+                                    "cards": [
+                                        "Ks",
+                                        "8d",
+                                        "Kh",
+                                        "Jd",
+                                        "8c",
+                                        "Jc",
+                                        "9s",
+                                        "8h"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "Koteta": [
+                            {
+                                "Anni": {
+                                    "cards": [
+                                        "10s",
+                                        "8s",
+                                        "7h",
+                                        "10d",
+                                        "Qs",
+                                        "Js",
+                                        "10h",
+                                        "7d"
+                                    ],
+                                    "announcements": [
+                                        "tierce"
+                                    ],
+                                    "points": 20
+                                }
+                            },
+                            {
+                                " Mimi": {
+                                    "cards": [
+                                        "10c",
+                                        "Jh",
+                                        "7s",
+                                        "Ad",
+                                        "Ah",
+                                        "9d",
+                                        "Ac",
+                                        "Qc"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "round 3": {
+                "Clubs": [
+                    {
+                        "Mecheta": [
+                            {
+                                "Pesho": {
+                                    "cards": [
+                                        "9c",
+                                        "10c",
+                                        "Qd",
+                                        "7h",
+                                        "Kd",
+                                        "Qc",
+                                        "7s",
+                                        "8d"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            },
+                            {
+                                " Gosho": {
+                                    "cards": [
+                                        "Ac",
+                                        "7c",
+                                        "Jd",
+                                        "Js",
+                                        "Ks",
+                                        "Qh",
+                                        "9s",
+                                        "Kh"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "Koteta": [
+                            {
+                                "Anni": {
+                                    "cards": [
+                                        "As",
+                                        "9d",
+                                        "8h",
+                                        "8s",
+                                        "10h",
+                                        "Kc",
+                                        "10s",
+                                        "9h"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            },
+                            {
+                                " Mimi": {
+                                    "cards": [
+                                        "Jc",
+                                        "8c",
+                                        "10d",
+                                        "Jh",
+                                        "Ah",
+                                        "Ad",
+                                        "7d",
+                                        "Qs"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "round 4": {
+                "Clubs": [
+                    {
+                        "Mecheta": [
+                            {
+                                "Pesho": {
+                                    "cards": [
+                                        "8d",
+                                        "9d",
+                                        "Jd",
+                                        "Js",
+                                        "Qd",
+                                        "9h",
+                                        "10s",
+                                        "Kh"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            },
+                            {
+                                " Gosho": {
+                                    "cards": [
+                                        "Qs",
+                                        "As",
+                                        "7d",
+                                        "7c",
+                                        "Ac",
+                                        "Kd",
+                                        "Kc",
+                                        "10d"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "Koteta": [
+                            {
+                                "Anni": {
+                                    "cards": [
+                                        "10h",
+                                        "7h",
+                                        "7s",
+                                        "8c",
+                                        "8h",
+                                        "10c",
+                                        "Jc",
+                                        "Ad"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            },
+                            {
+                                " Mimi": {
+                                    "cards": [
+                                        "9c",
+                                        "9s",
+                                        "Qh",
+                                        "Jh",
+                                        "Ks",
+                                        "8s",
+                                        "Qc",
+                                        "Ah"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "round 5": {
+                "Spades": [
+                    {
+                        "Mecheta": [
+                            {
+                                "Pesho": {
+                                    "cards": [
+                                        "Qd",
+                                        "Qh",
+                                        "Kh",
+                                        "Ks",
+                                        "Kd",
+                                        "8h",
+                                        "9s",
+                                        "7d"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            },
+                            {
+                                " Gosho": {
+                                    "cards": [
+                                        "Ac",
+                                        "Jh",
+                                        "Qc",
+                                        "Jd",
+                                        "8c",
+                                        "8d",
+                                        "10d",
+                                        "8s"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "Koteta": [
+                            {
+                                "Anni": {
+                                    "cards": [
+                                        "As",
+                                        "Ad",
+                                        "Qs",
+                                        "Js",
+                                        "7h",
+                                        "Kc",
+                                        "9c",
+                                        "10h"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            },
+                            {
+                                " Mimi": {
+                                    "cards": [
+                                        "7s",
+                                        "10s",
+                                        "9h",
+                                        "7c",
+                                        "Ah",
+                                        "10c",
+                                        "Jc",
+                                        "9d"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "round 6": {
+                "Clubs": [
+                    {
+                        "Mecheta": [
+                            {
+                                "Pesho": {
+                                    "cards": [
+                                        "8h",
+                                        "7c",
+                                        "Qc",
+                                        "8d",
+                                        "10c",
+                                        "As",
+                                        "7h",
+                                        "9d"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            },
+                            {
+                                " Gosho": {
+                                    "cards": [
+                                        "Kd",
+                                        "Qs",
+                                        "9s",
+                                        "Ah",
+                                        "Jh",
+                                        "Ad",
+                                        "Ac",
+                                        "8s"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "Koteta": [
+                            {
+                                "Anni": {
+                                    "cards": [
+                                        "Qh",
+                                        "10s",
+                                        "Kh",
+                                        "9c",
+                                        "Qd",
+                                        "Jd",
+                                        "10d",
+                                        "9h"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            },
+                            {
+                                " Mimi": {
+                                    "cards": [
+                                        "Kc",
+                                        "7d",
+                                        "Jc",
+                                        "8c",
+                                        "7s",
+                                        "Ks",
+                                        "Js",
+                                        "10h"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "round 7": {
+                "All trumps": [
+                    {
+                        "Mecheta": [
+                            {
+                                "Pesho": {
+                                    "cards": [
+                                        "10c",
+                                        "8s",
+                                        "Kc",
+                                        "7c",
+                                        "9d",
+                                        "8c",
+                                        "8h",
+                                        "Ah"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            },
+                            {
+                                " Gosho": {
+                                    "cards": [
+                                        "Qh",
+                                        "10s",
+                                        "9c",
+                                        "Kh",
+                                        "Qd",
+                                        "10h",
+                                        "As",
+                                        "Ad"
+                                    ],
+                                    "announcements": [
+                                        "belote"
+                                    ],
+                                    "points": 20
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "Koteta": [
+                            {
+                                "Anni": {
+                                    "cards": [
+                                        "Qs",
+                                        "7d",
+                                        "9h",
+                                        "Ks",
+                                        "8d",
+                                        "9s",
+                                        "Jc",
+                                        "Jh"
+                                    ],
+                                    "announcements": [
+                                        "belote"
+                                    ],
+                                    "points": 20
+                                }
+                            },
+                            {
+                                " Mimi": {
+                                    "cards": [
+                                        "Kd",
+                                        "10d",
+                                        "Qc",
+                                        "Js",
+                                        "7h",
+                                        "Jd",
+                                        "7s",
+                                        "Ac"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}{
+    "game 3": [
+        {
+            "round 0": {
+                "No trumps": [
+                    {
+                        "Mecheta": [
+                            {
+                                "Pesho": {
+                                    "cards": [
+                                        "Kh",
+                                        "Js",
+                                        "10h",
+                                        "Ks",
+                                        "10d",
+                                        "As",
+                                        "8d",
+                                        "Jh"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            },
+                            {
+                                " Gosho": {
+                                    "cards": [
+                                        "Qc",
+                                        "Qs",
+                                        "Qh",
+                                        "7s",
+                                        "10s",
+                                        "8s",
+                                        "10c",
+                                        "9s"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "Koteta": [
+                            {
+                                "Anni": {
+                                    "cards": [
+                                        "Ah",
+                                        "9c",
+                                        "Kc",
+                                        "Jc",
+                                        "9d",
+                                        "7h",
+                                        "8c",
+                                        "Ad"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            },
+                            {
+                                " Mimi": {
+                                    "cards": [
+                                        "7c",
+                                        "9h",
+                                        "7d",
+                                        "Jd",
+                                        "Kd",
+                                        "Ac",
+                                        "Qd",
+                                        "8h"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "round 1": {
+                "Clubs": [
+                    {
+                        "Mecheta": [
+                            {
+                                "Pesho": {
+                                    "cards": [
+                                        "Js",
+                                        "7s",
+                                        "As",
+                                        "9s",
+                                        "8c",
+                                        "Ad",
+                                        "Jh",
+                                        "9d"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            },
+                            {
+                                " Gosho": {
+                                    "cards": [
+                                        "Jd",
+                                        "8h",
+                                        "10s",
+                                        "Qd",
+                                        "9c",
+                                        "Qh",
+                                        "10h",
+                                        "Kh"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "Koteta": [
+                            {
+                                "Anni": {
+                                    "cards": [
+                                        "10c",
+                                        "Kc",
+                                        "Qs",
+                                        "7c",
+                                        "7d",
+                                        "Ks",
+                                        "9h",
+                                        "Ac"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            },
+                            {
+                                " Mimi": {
+                                    "cards": [
+                                        "7h",
+                                        "Kd",
+                                        "Qc",
+                                        "10d",
+                                        "8d",
+                                        "Ah",
+                                        "8s",
+                                        "Jc"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "round 2": {
+                "No trumps": [
+                    {
+                        "Mecheta": [
+                            {
+                                "Pesho": {
+                                    "cards": [
+                                        "8h",
+                                        "Qh",
+                                        "10c",
+                                        "Jc",
+                                        "Kh",
+                                        "Ah",
+                                        "10h",
+                                        "8c"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            },
+                            {
+                                " Gosho": {
+                                    "cards": [
+                                        "8d",
+                                        "8s",
+                                        "9c",
+                                        "Kc",
+                                        "9d",
+                                        "9h",
+                                        "Ad",
+                                        "7h"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "Koteta": [
+                            {
+                                "Anni": {
+                                    "cards": [
+                                        "Qd",
+                                        "Jh",
+                                        "7d",
+                                        "Ac",
+                                        "As",
+                                        "Kd",
+                                        "9s",
+                                        "10s"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            },
+                            {
+                                " Mimi": {
+                                    "cards": [
+                                        "10d",
+                                        "Js",
+                                        "Jd",
+                                        "Qc",
+                                        "Qs",
+                                        "Ks",
+                                        "7c",
+                                        "7s"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "round 3": {
+                "Clubs": [
+                    {
+                        "Mecheta": [
+                            {
+                                "Pesho": {
+                                    "cards": [
+                                        "Qs",
+                                        "Ad",
+                                        "7c",
+                                        "9s",
+                                        "Qd",
+                                        "Ah",
+                                        "7s",
+                                        "9h"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            },
+                            {
+                                " Gosho": {
+                                    "cards": [
+                                        "Jh",
+                                        "7h",
+                                        "7d",
+                                        "Ks",
+                                        "Jc",
+                                        "8d",
+                                        "Kc",
+                                        "Qc"
+                                    ],
+                                    "announcements": [
+                                        "belote",
+                                        "tierce"
+                                    ],
+                                    "points": 40
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "Koteta": [
+                            {
+                                "Anni": {
+                                    "cards": [
+                                        "As",
+                                        "Ac",
+                                        "10d",
+                                        "8h",
+                                        "9d",
+                                        "8c",
+                                        "Kd",
+                                        "10c"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            },
+                            {
+                                " Mimi": {
+                                    "cards": [
+                                        "Kh",
+                                        "10s",
+                                        "10h",
+                                        "Js",
+                                        "8s",
+                                        "Jd",
+                                        "9c",
+                                        "Qh"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "round 4": {
+                "No trumps": [
+                    {
+                        "Mecheta": [
+                            {
+                                "Pesho": {
+                                    "cards": [
+                                        "Ac",
+                                        "10c",
+                                        "Qd",
+                                        "7c",
+                                        "9c",
+                                        "Ad",
+                                        "Qs",
+                                        "7d"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            },
+                            {
+                                " Gosho": {
+                                    "cards": [
+                                        "Qc",
+                                        "8c",
+                                        "10s",
+                                        "As",
+                                        "Kh",
+                                        "8h",
+                                        "8s",
+                                        "Ks"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "Koteta": [
+                            {
+                                "Anni": {
+                                    "cards": [
+                                        "10h",
+                                        "10d",
+                                        "Jh",
+                                        "Js",
+                                        "Jc",
+                                        "9s",
+                                        "9h",
+                                        "7h"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            },
+                            {
+                                " Mimi": {
+                                    "cards": [
+                                        "7s",
+                                        "Kd",
+                                        "Qh",
+                                        "Kc",
+                                        "8d",
+                                        "9d",
+                                        "Jd",
+                                        "Ah"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "round 5": {
+                "Diamonds": [
+                    {
+                        "Mecheta": [
+                            {
+                                "Pesho": {
+                                    "cards": [
+                                        "Kd",
+                                        "8s",
+                                        "Ac",
+                                        "8d",
+                                        "7c",
+                                        "Jh",
+                                        "7s",
+                                        "Kh"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            },
+                            {
+                                " Gosho": {
+                                    "cards": [
+                                        "9d",
+                                        "Ks",
+                                        "10s",
+                                        "As",
+                                        "8h",
+                                        "Ad",
+                                        "Jc",
+                                        "Kc"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "Koteta": [
+                            {
+                                "Anni": {
+                                    "cards": [
+                                        "7d",
+                                        "9c",
+                                        "9s",
+                                        "Qd",
+                                        "Qs",
+                                        "Js",
+                                        "Qc",
+                                        "9h"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            },
+                            {
+                                " Mimi": {
+                                    "cards": [
+                                        "Qh",
+                                        "10h",
+                                        "10d",
+                                        "Jd",
+                                        "Ah",
+                                        "10c",
+                                        "7h",
+                                        "8c"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "round 6": {
+                "Diamonds": [
+                    {
+                        "Mecheta": [
+                            {
+                                "Pesho": {
+                                    "cards": [
+                                        "9c",
+                                        "Jc",
+                                        "Js",
+                                        "8d",
+                                        "Ad",
+                                        "Ks",
+                                        "Ac",
+                                        "Kd"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            },
+                            {
+                                " Gosho": {
+                                    "cards": [
+                                        "Qh",
+                                        "Kh",
+                                        "7c",
+                                        "Qd",
+                                        "Kc",
+                                        "8s",
+                                        "10h",
+                                        "10d"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "Koteta": [
+                            {
+                                "Anni": {
+                                    "cards": [
+                                        "As",
+                                        "Ah",
+                                        "10s",
+                                        "9s",
+                                        "9h",
+                                        "Qs",
+                                        "7s",
+                                        "10c"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            },
+                            {
+                                " Mimi": {
+                                    "cards": [
+                                        "Qc",
+                                        "Jh",
+                                        "9d",
+                                        "7h",
+                                        "Jd",
+                                        "7d",
+                                        "8c",
+                                        "8h"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "round 7": {
+                "Clubs": [
+                    {
+                        "Mecheta": [
+                            {
+                                "Pesho": {
+                                    "cards": [
+                                        "As",
+                                        "Ah",
+                                        "Qs",
+                                        "Js",
+                                        "Jh",
+                                        "10s",
+                                        "Qh",
+                                        "Kc"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            },
+                            {
+                                " Gosho": {
+                                    "cards": [
+                                        "Qd",
+                                        "Ac",
+                                        "Kh",
+                                        "Ad",
+                                        "8d",
+                                        "7h",
+                                        "8h",
+                                        "Qc"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "Koteta": [
+                            {
+                                "Anni": {
+                                    "cards": [
+                                        "9d",
+                                        "7s",
+                                        "Jc",
+                                        "9s",
+                                        "8s",
+                                        "7d",
+                                        "10h",
+                                        "9c"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            },
+                            {
+                                " Mimi": {
+                                    "cards": [
+                                        "Jd",
+                                        "10d",
+                                        "7c",
+                                        "10c",
+                                        "9h",
+                                        "8c",
+                                        "Kd",
+                                        "Ks"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "round 8": {
+                "Diamonds": [
+                    {
+                        "Mecheta": [
+                            {
+                                "Pesho": {
+                                    "cards": [
+                                        "8s",
+                                        "8c",
+                                        "Kd",
+                                        "Qc",
+                                        "10s",
+                                        "10h",
+                                        "Ah",
+                                        "Qs"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            },
+                            {
+                                " Gosho": {
+                                    "cards": [
+                                        "Qd",
+                                        "8h",
+                                        "Jh",
+                                        "Jc",
+                                        "Js",
+                                        "Kh",
+                                        "10d",
+                                        "7h"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "Koteta": [
+                            {
+                                "Anni": {
+                                    "cards": [
+                                        "Ad",
+                                        "Qh",
+                                        "7s",
+                                        "Ks",
+                                        "9h",
+                                        "Kc",
+                                        "9s",
+                                        "8d"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            },
+                            {
+                                " Mimi": {
+                                    "cards": [
+                                        "9c",
+                                        "7d",
+                                        "Jd",
+                                        "9d",
+                                        "10c",
+                                        "Ac",
+                                        "7c",
+                                        "As"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "round 9": {
+                "Diamonds": [
+                    {
+                        "Mecheta": [
+                            {
+                                "Pesho": {
+                                    "cards": [
+                                        "Qd",
+                                        "7d",
+                                        "7s",
+                                        "Ac",
+                                        "7c",
+                                        "8s",
+                                        "10c",
+                                        "8h"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            },
+                            {
+                                " Gosho": {
+                                    "cards": [
+                                        "9h",
+                                        "Ad",
+                                        "Jd",
+                                        "Ks",
+                                        "10d",
+                                        "8d",
+                                        "7h",
+                                        "9d"
+                                    ],
+                                    "announcements": [
+                                        "quatre"
+                                    ],
+                                    "points": 100
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "Koteta": [
+                            {
+                                "Anni": {
+                                    "cards": [
+                                        "Qh",
+                                        "Kh",
+                                        "Js",
+                                        "Kd",
+                                        "10h",
+                                        "Jh",
+                                        "Ah",
+                                        "10s"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            },
+                            {
+                                " Mimi": {
+                                    "cards": [
+                                        "8c",
+                                        "Jc",
+                                        "As",
+                                        "Qs",
+                                        "Kc",
+                                        "9c",
+                                        "9s",
+                                        "Qc"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "round 10": {
+                "Spades": [
+                    {
+                        "Mecheta": [
+                            {
+                                "Pesho": {
+                                    "cards": [
+                                        "8d",
+                                        "8s",
+                                        "Ks",
+                                        "Jd",
+                                        "Ad",
+                                        "9s",
+                                        "Ah",
+                                        "Jc"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            },
+                            {
+                                " Gosho": {
+                                    "cards": [
+                                        "Jh",
+                                        "Kd",
+                                        "10c",
+                                        "9d",
+                                        "10h",
+                                        "8h",
+                                        "7d",
+                                        "10s"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "Koteta": [
+                            {
+                                "Anni": {
+                                    "cards": [
+                                        "7s",
+                                        "As",
+                                        "Js",
+                                        "Kc",
+                                        "Qh",
+                                        "Qd",
+                                        "Kh",
+                                        "Qs"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            },
+                            {
+                                " Mimi": {
+                                    "cards": [
+                                        "7h",
+                                        "9h",
+                                        "9c",
+                                        "Ac",
+                                        "7c",
+                                        "8c",
+                                        "10d",
+                                        "Qc"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "round 11": {
+                "All trumps": [
+                    {
+                        "Mecheta": [
+                            {
+                                "Pesho": {
+                                    "cards": [
+                                        "7h",
+                                        "8d",
+                                        "8c",
+                                        "10s",
+                                        "Qd",
+                                        "9h",
+                                        "Qs",
+                                        "Qc"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            },
+                            {
+                                " Gosho": {
+                                    "cards": [
+                                        "7s",
+                                        "7c",
+                                        "8h",
+                                        "8s",
+                                        "Kc",
+                                        "Jh",
+                                        "As",
+                                        "Js"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "Koteta": [
+                            {
+                                "Anni": {
+                                    "cards": [
+                                        "10h",
+                                        "Kd",
+                                        "Ad",
+                                        "9c",
+                                        "10c",
+                                        "Kh",
+                                        "Ks",
+                                        "Ac"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            },
+                            {
+                                " Mimi": {
+                                    "cards": [
+                                        "7d",
+                                        "Qh",
+                                        "9d",
+                                        "Jc",
+                                        "Ah",
+                                        "10d",
+                                        "Jd",
+                                        "9s"
+                                    ],
+                                    "announcements": [
+                                        "tierce"
+                                    ],
+                                    "points": 20
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "round 12": {
+                "All trumps": [
+                    {
+                        "Mecheta": [
+                            {
+                                "Pesho": {
+                                    "cards": [
+                                        "7d",
+                                        "Ac",
+                                        "9h",
+                                        "Qs",
+                                        "7c",
+                                        "8c",
+                                        "Qd",
+                                        "Qh"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            },
+                            {
+                                " Gosho": {
+                                    "cards": [
+                                        "Kc",
+                                        "9c",
+                                        "10c",
+                                        "Ad",
+                                        "10s",
+                                        "9d",
+                                        "Jc",
+                                        "Jd"
+                                    ],
+                                    "announcements": [
+                                        "tierce"
+                                    ],
+                                    "points": 20
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "Koteta": [
+                            {
+                                "Anni": {
+                                    "cards": [
+                                        "9s",
+                                        "Kd",
+                                        "Kh",
+                                        "7h",
+                                        "Ks",
+                                        "7s",
+                                        "8d",
+                                        "Ah"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            },
+                            {
+                                " Mimi": {
+                                    "cards": [
+                                        "10d",
+                                        "As",
+                                        "8h",
+                                        "Qc",
+                                        "10h",
+                                        "Js",
+                                        "8s",
+                                        "Jh"
+                                    ],
+                                    "announcements": [],
+                                    "points": 0
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}
