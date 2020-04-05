@@ -9,25 +9,29 @@ card_deck = ["7s", "8s", "9s", "10s", "Js", "Qs","Ks","As",
 
 lst_calls = ["Clubs", "Diamonds", "Hearts", "Spades", "No trumps", "All trumps"]
 
+
 def random_call():
-    n = rand(0,len(lst_calls)-1)
+    n = rand(0, len(lst_calls) - 1)
 
     return lst_calls[n]
+
 
 def create_deck_copy():
     return deepcopy(card_deck)
 
+
 def random_hand(card_deck_cp):
     lst_hand = []
 
-    for x in range(0,8):
-        n = rand(0,len(card_deck_cp)-1)
+    for x in range(0, 8):
+        n = rand(0, len(card_deck_cp) - 1)
         lst_hand.append(card_deck_cp[n])
         card_deck_cp.remove(card_deck_cp[n])
 
     return lst_hand
 
-#sorting by the suits(7 8 9 10 J->11 Q->12 K->13 A->14)
+
+# sorting by the suits(7 8 9 10 J->11 Q->12 K->13 A->14)
 def inner_sort(lst):
     if lst == []:
         return lst
@@ -35,11 +39,11 @@ def inner_sort(lst):
         l = []
         l2 = []
 
-        #getting the rank 
+        # getting the rank
         rank = lst[0][-1:]
 
         for x in lst:
-            #take only the suite
+            # take only the suite
             x = x[:-1]
 
             if x == "J":
@@ -54,14 +58,16 @@ def inner_sort(lst):
             l.append(int(x))
         l.sort()
 
-    return [str(card)+rank for card in l]
+    return [str(card) + rank for card in l]
+
 
 def sort(lst):
-    list_with_clubs=[]
-    list_with_dimonds=[]
-    list_with_hearts=[]
-    list_with_spades=[]
-#four lists with each rank
+    list_with_clubs = []
+    list_with_dimonds = []
+    list_with_hearts = []
+    list_with_spades = []
+
+    # four lists with each rank
     for card in lst:
         if len(card) == 2:
             if card[1] == "c":
@@ -103,13 +109,14 @@ def sort(lst):
 
     return final_list_with_sorted_cards
 
+
 def has_belote(cards):
     if len(cards) == 0:
         return []
 
     else:
-        result =[]
-        count =  0
+        result = []
+        count = 0
         for card in cards:
             if card[:-1] == '12':
                 count += 1
@@ -121,8 +128,9 @@ def has_belote(cards):
 
         if count == 2:
             return result
-        else: 
+        else:
             return []
+
 
 def has_tierce(cards):
     if len(cards) < 3:
@@ -131,20 +139,21 @@ def has_tierce(cards):
         count = 1
         result = []
         for i in range(len(cards)):
-            if i != len(cards) - 1 and int(cards[i+1][:-1]) == int(cards[i][:-1]) + 1:
+            if i != len(cards) - 1 and int(cards[i + 1][:-1]) == int(cards[i][:-1]) + 1:
                 count += 1
                 result.append(cards[i])
-            #include the last card from the seqence
+            # include the last card from the seqence
             elif count == 3 and int(cards[i][:-1]) == int(cards[i - 1][:-1]) + 1:
                 result.append(cards[i])
-                
+
                 return result
-            #the sequence is breaked
+            # the sequence is breaked
             else:
                 count = 1
                 result.clear()
 
         return []
+
 
 def has_quatre(cards):
     if len(cards) < 4:
@@ -153,20 +162,21 @@ def has_quatre(cards):
         count = 1
         result = []
         for i in range(len(cards)):
-            if i != len(cards) - 1 and int(cards[i+1][:-1]) == int(cards[i][:-1]) + 1:
+            if i != len(cards) - 1 and int(cards[i + 1][:-1]) == int(cards[i][:-1]) + 1:
                 count += 1
                 result.append(cards[i])
-            #include the last card from the seqence
+            # include the last card from the seqence
             elif count == 4 and int(cards[i][:-1]) == int(cards[i - 1][:-1]) + 1:
                 result.append(cards[i])
-                
+
                 return result
-            #the sequence is breaked
+            # the sequence is breaked
             else:
                 count = 1
                 result.clear()
 
         return []
+
 
 def has_quinte(cards):
     if len(cards) < 5:
@@ -175,21 +185,22 @@ def has_quinte(cards):
         count = 1
         result = []
         for i in range(len(cards)):
-            if i != len(cards) - 1 and int(cards[i+1][:-1]) == int(cards[i][:-1]) + 1:
+            if i != len(cards) - 1 and int(cards[i + 1][:-1]) == int(cards[i][:-1]) + 1:
                 count += 1
                 result.append(cards[i])
 
-            #include the last card from the seqence
+            # include the last card from the seqence
             elif count >= 5 and int(cards[i][:-1]) == int(cards[i - 1][:-1]) + 1:
                 result.append(cards[i])
-                
+
                 return result
-            #the sequence is breaked
+            # the sequence is breaked
             else:
                 count = 1
                 result.clear()
 
         return []
+
 
 def has_carre(sorted_cards):
     count_9 = 0
@@ -206,15 +217,15 @@ def has_carre(sorted_cards):
             if '9' + r in rank:
                 count_9 += 1
             if '10' + r in rank:
-                count_10 +=1
+                count_10 += 1
             if '11' + r in rank:
-                count_11 +=1
+                count_11 += 1
             if '12' + r in rank:
-                count_12 +=1
+                count_12 += 1
             if '13' + r in rank:
-                count_13 +=1
+                count_13 += 1
             if '14' + r in rank:
-                count_14 +=1
+                count_14 += 1
 
     if count_9 == 4:
         result['carre of 9s'] = ['9c', '9d', '9h', '9s']
@@ -236,6 +247,7 @@ def has_carre(sorted_cards):
 
     return result
 
+
 def check_for_announcements(all_sorted_cards, sorted_cards_by_rank):
     announcements = {'belote': [],
     'tierce': [],
@@ -248,12 +260,11 @@ def check_for_announcements(all_sorted_cards, sorted_cards_by_rank):
     'carre of Ks': [],
     'carre of As': []
     }
-    announcement = {}
 
     result = {}
 
     if len(has_belote(sorted_cards_by_rank)) > 0:
-        announcements['belote'] =  has_belote(sorted_cards_by_rank)
+        announcements['belote'] = has_belote(sorted_cards_by_rank)
 
     if len(has_tierce(sorted_cards_by_rank)) > 0:
         announcements['tierce'] = has_tierce(sorted_cards_by_rank)
@@ -274,8 +285,9 @@ def check_for_announcements(all_sorted_cards, sorted_cards_by_rank):
 
     return result
 
+
 def remove_sequence_if_there_is_a_carre(announcements):
-    #one card cannot be part from a carre and tierce/quarte/quinte in the same time
+    # one card cannot be part from a carre and tierce/quarte/quinte in the same time
     for key, value in announcements.items():
         if key == 'carre of 9s' and len(value) != 0:
             if 'tierce' in announcements:
@@ -346,7 +358,8 @@ def remove_sequence_if_there_is_a_carre(announcements):
 
     return announcements
 
-#for one player at the round 
+
+# for one player at the round 
 def announcements(sorted_cards, round_call):
     announcements = {'belote': [],
     'tierce': [],
@@ -383,18 +396,18 @@ def announcements(sorted_cards, round_call):
             announcements[key].append(value)
 
         for key, value in dic2.items():
-            if key[0] != 'c': 
+            if key[0] != 'c':
                 announcements[key].append(value)
 
         for key, value in dic3.items():
-            if key[0] != 'c': 
+            if key[0] != 'c':
                 announcements[key].append(value)
 
         for key, value in dic4.items():
-            if key[0] != 'c': 
+            if key[0] != 'c':
                 announcements[key].append(value)
 
-        #cannot have more than one belote in one round
+        # cannot have more than one belote in one round
         if len(announcements['belote']) > 1:
             announcements['belote'] = announcements['belote'][0]
 
@@ -434,8 +447,8 @@ def points(announcements):
 
             elif announce == 'carre of Js':
                 list_with_points.append(200)
-              
+
             else:
-                list_with_points.append(100)                
-        
+                list_with_points.append(100)
+
         return int(sum(list_with_points))
